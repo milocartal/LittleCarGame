@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - AI
+  - OverpassCollider
+  - UnderpassCollider
+  - Car
+  - Jump
+  - CheckPoint
+  - OverpassTrigger
+  - UnderpassTrigger
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -12,13 +20,13 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
+  - ObjectOnUnderpass
+  - ObjectOnOverpass
+  - ObjectFlying
+  - Checkpoint
   - Surface
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -42,8 +50,20 @@ TagManager:
   - name: Background
     uniqueID: 1040317915
     locked: 0
+  - name: RaceTrack
+    uniqueID: 4073938921
+    locked: 0
+  - name: Skidmarks
+    uniqueID: 3666966619
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: RaceTrackOverpass
+    uniqueID: 4063529623
+    locked: 0
+  - name: SkirdmarksOverpass
+    uniqueID: 1598324927
     locked: 0
   - name: Flying
     uniqueID: 3801021561
