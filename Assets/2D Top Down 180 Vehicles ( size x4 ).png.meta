@@ -1,0 +1,4544 @@
+fileFormatVersion: 2
+guid: 020d983659245af40b65fe4ee9a63425
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3777
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ece8547c058e841a201aa4f0c1d942
+      internalID: 333876048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 3777
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6013994321162041b426719cb38bf9a
+      internalID: -1006145808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 3777
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6af572ec4a38a468f296955324c748
+      internalID: 1171001412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_3
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3781
+        width: 118
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e12cc4d845a55438dee2e58a3d7bde
+      internalID: -510417968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_4
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3785
+        width: 110
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c047de1c2d79b443a35d7aeef89b3dc
+      internalID: -737353515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_5
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 3781
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c7b31bf86fe0c4e8a4a61953adc20b
+      internalID: -971509805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_6
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 3781
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3066ec13ed1ef84483b48117c046a40
+      internalID: 205956601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_7
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 3781
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a3ed023af99eb4ba4dcec175ec1f46
+      internalID: 1109665993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_8
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 3789
+        width: 102
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bee8b7a903488b4ebe600696a1a80c9
+      internalID: 2118502445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_9
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 3785
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9196a25e1b6bb5c4b8ba1586f20f50f5
+      internalID: -1297381620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_10
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 3785
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9796d34fe61cc44b9b1d6f8313859e
+      internalID: 867335009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_11
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3781
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba09259998a58ac44b082f2648a96f9b
+      internalID: -1847672682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_12
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 3781
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c280f08ab2976419be552e0af4a77a
+      internalID: -957756401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_13
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 3781
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac972c9107e41864a95e62b7b3e18d62
+      internalID: 78524139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_14
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 3849
+        width: 42
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b231dbfd65b2443af3774df4d9b32b
+      internalID: -550565875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_15
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 3849
+        width: 50
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92eaf4b4aaaf5c4485b1c3d5ce40630
+      internalID: 2128324038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_16
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 3849
+        width: 58
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835d3bcc74c70794c84b2319b95029e1
+      internalID: 709384328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_17
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 3849
+        width: 90
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31884a1dab718ad4dab7486025fbb3a9
+      internalID: 2107157030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_18
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 3841
+        width: 94
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118cbe163d840774fa28e4010c75a9b4
+      internalID: -895267195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_19
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3585
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7472b9f2db12c64abb48059a8a5b396
+      internalID: -1180258911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 3585
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78106c98cecd8a24fb17d0871192f228
+      internalID: -532902155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_21
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 3585
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2748bd5478367ad459913c051ad5353f
+      internalID: 308906093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_22
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 3589
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bd70151afe13240ae4a36d5fe26211
+      internalID: 224700607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_23
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3589
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab0d31abb598c142bd3acbd4daeafb6
+      internalID: 38550092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_24
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 3589
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d4e38625d350048b3b804f1aaf1940
+      internalID: -1769774667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_25
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 3593
+        width: 110
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c1d8424e033e2418763c259556c5ac
+      internalID: -1570248790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_26
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 3589
+        width: 118
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d77b7f620c53a3459aeb867c0df3a8e
+      internalID: -350186507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_27
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 3593
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aedb38a33279dc44a8b8aa6de23a709
+      internalID: -336122021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_28
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 3593
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0decbfe14b3df2b4999c23c54cbfa225
+      internalID: -821173843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_29
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 3593
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294101579efddfa4183adb6e5358f500
+      internalID: 731217243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_30
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3589
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817c8b0f3baabde48aa314905683e487
+      internalID: 40885022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_31
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 3589
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bc4448f06b1534c9bf238a87b99795
+      internalID: 725035379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_32
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 3589
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83aca1b3f54943d488b28f5c1776bc7b
+      internalID: -187125178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_33
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 3721
+        width: 42
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a318ad355e3894282929fc2cd75a1c
+      internalID: 664057318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_34
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 3721
+        width: 50
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f165194503f99459b203cc1b162a4f
+      internalID: 633989345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_35
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 3721
+        width: 58
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f14cfc702a2db040ab368f9d9cea13c
+      internalID: -442995963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_36
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 3753
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e411cfc0d73b325479440ddcb0111dd0
+      internalID: 424010547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_37
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 3753
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0ab402e5dc72042914f1149e28308e
+      internalID: 477409996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_38
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 3753
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ad07ae2e7fd114ca0fc3ca9ca75e21
+      internalID: -445252782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_39
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 3605
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19167c584e1a4248bc52f4f491fa1ca
+      internalID: -53428106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_40
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 3605
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c7835fe2618c64db41e762d2ab7f39
+      internalID: -1622547265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_41
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 3605
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569752db3fa2f164b8557cab9f909957
+      internalID: 346976596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_42
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 3605
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e02e0db9b675664598adf44dbd7296f
+      internalID: 469376155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_43
+      rect:
+        serializedVersion: 2
+        x: 3145
+        y: 3609
+        width: 110
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bee408c50cbad43be8d0e2e5233902
+      internalID: 1671358230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_44
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 3605
+        width: 110
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1e7111c7d92a14a88a45f5dd97d881
+      internalID: 1671832256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_45
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 3605
+        width: 110
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a3d439fa98e1043a1cabb3783b41f2
+      internalID: -1399389711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_46
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 3605
+        width: 110
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9c80109afb7684b9685588a3353fa5
+      internalID: -1894634425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_47
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 3605
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c552e9febc1c9a43bb8b4980e5dcf35
+      internalID: -421942690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_48
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 3605
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71762765e30fb648b4bad4f93c3c468
+      internalID: -2120527845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_49
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 3593
+        width: 42
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286db3679a84de94391403ef8f31a2f0
+      internalID: -385060788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_50
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 3593
+        width: 50
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886e807bea5479f4c859afd9864ebf8c
+      internalID: -1276838030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_51
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 3593
+        width: 58
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbca3270bdb51a499e64aae8b040227
+      internalID: 1799524544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_52
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 3625
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5b855eb13a87e48bf0bc4ad0839a63
+      internalID: -1245953238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_53
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 3625
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e782304980d5a647adffc229a02f905
+      internalID: 1193127813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_54
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 3625
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5190159b16ca784383a2b4f0949f74b
+      internalID: 1850436671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_55
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3341
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ef5d1f863ceec4b99e5f05f6569e6f
+      internalID: 2046551048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_56
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3341
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69754ee7596ec8f40a17ce2b82eb3018
+      internalID: 1831770187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_57
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 3341
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f579999de5c3174a8fad7eb6fce07db
+      internalID: 1117108449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_58
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3337
+        width: 118
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817b9de56f4459d4ca5df9e35a073d20
+      internalID: -383065929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_59
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3341
+        width: 110
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d246957a076334041af11bcd2ffe7a4a
+      internalID: 99926150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_60
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 3337
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b1c281c0fe095458f3abf377980e0b
+      internalID: -585825128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_61
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 3337
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd11ce2ee863cd4ea896e17306634e8
+      internalID: 1246806801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_62
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 3337
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf8604625f81324d9583174b37ff315
+      internalID: -1349025020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_63
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 3341
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8841d811188e63d46a82e3072bbc84d4
+      internalID: 1513937381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_64
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 3345
+        width: 102
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c686a0392e8bf9a45a1d213f6c7cc8f6
+      internalID: 139804161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_65
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 3345
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b15cbc5d2fbc44e88626d32f0616d6
+      internalID: -1347418786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_66
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 3337
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7295dcf6a210d8a42bc93ea6f1d0f158
+      internalID: 1003124988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_67
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3333
+        width: 102
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ef690ae9b1c8a42932ee255549374c
+      internalID: -698279652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_68
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 3333
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba05a5c22cea18b448e05aa048c4982f
+      internalID: -1052248915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_69
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 3345
+        width: 86
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f250cf7b52854e4281a77681a30946e
+      internalID: 1078652583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_70
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 3345
+        width: 86
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1048fbd8508d24cb9976ccb17f822d
+      internalID: 1203194325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_71
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 3345
+        width: 86
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493ac17e46cb8064d9ffb760fb02af92
+      internalID: 552365286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_72
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 3329
+        width: 102
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301d4c370e2fa9d44aae4479f4df1de3
+      internalID: 757945980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_73
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 3329
+        width: 102
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc541128f042b7d4fa35a72f87bbd343
+      internalID: 2001532992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_74
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 3269
+        width: 102
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10dae6cb44e4fb4f86a707696837cf2
+      internalID: -1975170233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_75
+      rect:
+        serializedVersion: 2
+        x: 3021
+        y: 3269
+        width: 102
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738955e9bdc08d9448866f6f14ef6853
+      internalID: 1096712837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_76
+      rect:
+        serializedVersion: 2
+        x: 3145
+        y: 3265
+        width: 110
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069be6a106313db4ead6978a7c509af2
+      internalID: -1012642415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_77
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 3265
+        width: 110
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2203f96d2baf648b5308fced07a1b6
+      internalID: -1744540241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_78
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 3173
+        width: 110
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e519c8f4fe604834fa49bbbc829a066e
+      internalID: 1511422426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_79
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 3265
+        width: 110
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7b16f40109aaf4fa40124b0bf6793c
+      internalID: -1162467364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_80
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 3265
+        width: 102
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68d1a18b6f130646b81fe153b3c3e13
+      internalID: -1652400044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_81
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 3265
+        width: 102
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d84a23868e1da04b9cd2ab455f0a6ec
+      internalID: -1459451291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_82
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3149
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330c28f0230ec024fbfab3e91c7f45d9
+      internalID: 1395939463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_83
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3149
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98c818ade70a8748b0795797f1ee8a4
+      internalID: -1269821007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_84
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 3149
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738fc84f949aa9e41b84b84fcdfec938
+      internalID: 1173509107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_85
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 3145
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9cbe64cf4efa84f895bb678a0760d8
+      internalID: 414850741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_86
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3145
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b013c275c9451214cab212a93210ca5b
+      internalID: -1598139844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_87
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 3145
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f443936d1894f4478952b2960250f5c
+      internalID: 1146296582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_88
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 3149
+        width: 110
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64cfdd69eb102040bf8a6aa6e7884fc
+      internalID: 1633011116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_89
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 3145
+        width: 118
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb0b046850d1ef46844b98bfcd09ce1
+      internalID: 1457481449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_90
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 3153
+        width: 102
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbf3697431bbb848bcabb5a43266442
+      internalID: -1666558359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_91
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 3153
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd37e1edb8e262241986c948e97ae426
+      internalID: -1157189636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_92
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 3153
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9b6d1c43e756d4bb465b9080152678
+      internalID: 258081295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_93
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 3145
+        width: 102
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36079b23bf89df4b9c30a483ca44d75
+      internalID: -1308686298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_94
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3141
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2004abf7fa009214281678e1d2c0d0a2
+      internalID: 1400985914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_95
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 3141
+        width: 102
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e806cda1d12934c95d6c34c046cdc0
+      internalID: -2053819194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_96
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 3133
+        width: 94
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1dbeb641d4dfe429621bbd988eb043
+      internalID: 1246178576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_97
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 3137
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cebdc090ded6b4b818c6f2f615f3c3
+      internalID: 1326495760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_98
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 3149
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9fb19690144b640bf1c2d63407c3c7
+      internalID: 764087668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_99
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2913
+        width: 86
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8a9fbebf75d104f89d9b40b942a8ed
+      internalID: 212018739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_100
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2913
+        width: 86
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a470cb5d226dc484eb876dc3695dd45d
+      internalID: -856561712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_101
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2909
+        width: 86
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6ca4ba0bb3bfa489ab5b2ced4420bf
+      internalID: 369674522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_102
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 2893
+        width: 126
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3673e0f1d788714c8edc1db5d418660
+      internalID: 1730365227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_103
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2897
+        width: 118
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfcd80b6d0a3a9489f1b1a5ab1dc63a
+      internalID: 227975806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_104
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 2901
+        width: 126
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7404097c27bdb49aebdd1947457be6
+      internalID: -822622302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_105
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2901
+        width: 158
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf5ede4d9996934cb1e447a51e4e7cf
+      internalID: -276052828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_106
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 2881
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfce6c8c88d892409489582d46dcdca
+      internalID: -1183273173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_107
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 2881
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6a684f6bbe4a44e8b9fe148e427d3c
+      internalID: 393795160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_108
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2881
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7302e371b883240a7afb80eba5f263
+      internalID: 1890063814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_109
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 2889
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f41c53318e0824db621064bc0cfabb
+      internalID: -685220455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_110
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 2893
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69eaba5bb1518541be36b53d858348b
+      internalID: 1830526613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_111
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 2893
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1dce74d89196445bc5b589699e49c5
+      internalID: 426610135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_112
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 2881
+        width: 102
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfd7b8f25c591d40a40cdb948d3e306
+      internalID: 313077078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_113
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 2881
+        width: 102
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ba8290595d2fe429123635f605aaa9
+      internalID: 868787024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_114
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 2897
+        width: 94
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb47af54ff32bb48a933a5379c0876b
+      internalID: -1353315193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_115
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 2957
+        width: 94
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd0b6302ab3247429782297858227e9
+      internalID: -1505549770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_116
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 2957
+        width: 94
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763091cfbd3d9524c8939784fee06368
+      internalID: 1776000403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_117
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 2897
+        width: 94
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b53f1a1d128584478a952c557bb591c
+      internalID: 1846678128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_118
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 2897
+        width: 94
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94a7b9edfbee6b439bc24c13fd00f4a
+      internalID: 198264387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_119
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 2893
+        width: 94
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457f5cacfebe22544a82070e5f064aea
+      internalID: -295597446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_120
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 2893
+        width: 94
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e16a4a001b72041a5d516fc60153ab
+      internalID: -981822593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_121
+      rect:
+        serializedVersion: 2
+        x: 3413
+        y: 2845
+        width: 90
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3321f003e19cf4a4484f3afca10640b3
+      internalID: -126417881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_122
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 2905
+        width: 90
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f3de198b82dfd408842f34825aaa6a
+      internalID: -778328028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_123
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 2897
+        width: 94
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e421bcd59cf86e40accc2507fd3f777
+      internalID: 1596046628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_124
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 2897
+        width: 94
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbab6866da646b4a99fc7de7a0e9d97
+      internalID: -1801294386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_125
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2717
+        width: 86
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5850156e707e44fb9b50939e5b0b4a
+      internalID: 1527653176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_126
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2717
+        width: 86
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8424cff82c5263640b197b880ec646a3
+      internalID: -172347830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_127
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2717
+        width: 86
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0491cbe713ac1264fac6f172eb713b5d
+      internalID: 1291515092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_128
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 2701
+        width: 126
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cb201938113e746a2de479ad7d98db
+      internalID: -945119075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_129
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2701
+        width: 126
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd4fe3d59cc387478226eb059ba94d3
+      internalID: -182968217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_130
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 2705
+        width: 118
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598e438c76cd7234ab83925f48075896
+      internalID: -1004213520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_131
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2705
+        width: 158
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b6ff5735e4cf54d8dcdaf29a048a4f
+      internalID: -719928134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_132
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 2689
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636a75de596edc44bbecc0ab5011e12f
+      internalID: 1951229697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_133
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 2689
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ba0c53991c96141a2dd16b692242ba
+      internalID: 1175953933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_134
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2689
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9316a8512aef5994c8e75efc49e71cb8
+      internalID: -52465089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_135
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 2701
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226ef28eb2387944d80542cf87ee8a2e
+      internalID: -545481880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_136
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 2697
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568f03db8f4ff9c4bbefb7ff837d2a9c
+      internalID: 917872030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_137
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 2701
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f62cf1024d981944a9f823704cef938
+      internalID: -693546794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_138
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 2689
+        width: 102
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc3455e66ddc8147a579b0d413828f2
+      internalID: -459941447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_139
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 2689
+        width: 102
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1cda786ecfcf344b0cdc7749093d9f
+      internalID: -512013660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_140
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 2705
+        width: 94
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be33d7c0763433647ac06e0f8a754e41
+      internalID: -985639253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_141
+      rect:
+        serializedVersion: 2
+        x: 2753
+        y: 2569
+        width: 126
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa71403af6618b24b9892d788f9ccc59
+      internalID: 125529138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_142
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 2565
+        width: 126
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc64165ffe52e6a47a29bffdd2e8adfc
+      internalID: 577233501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_143
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 2577
+        width: 118
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405b860279089334f95f446414ce8043
+      internalID: -97550791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_144
+      rect:
+        serializedVersion: 2
+        x: 3205
+        y: 2577
+        width: 118
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8c6d75a9dd1f94e95af628b258c2aa
+      internalID: -796323967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_145
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 2577
+        width: 118
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5311a9ec45fb26743912d122ffd2984a
+      internalID: -1473733771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_146
+      rect:
+        serializedVersion: 2
+        x: 3473
+        y: 2577
+        width: 158
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef74845a242aaf4d9af2dcf5640327a
+      internalID: -220795594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_147
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 2645
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3101b08da6f984c45a32f780a35e771c
+      internalID: 745618070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_148
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2649
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f0e44f219888642a570f3db9c060d2
+      internalID: -521723306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_149
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 2649
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bf0d14c2959ff40af7e2bb6e54163f
+      internalID: -814619642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_150
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2317
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e116dbdf43f3ed34d97a49630467ebd7
+      internalID: -2055758997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_151
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2313
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5a8be73bbb6bc4da0d6f30603735ac
+      internalID: 152464911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_152
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2317
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9552e611699899f49afe8041e9395139
+      internalID: 2082572376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_153
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 2313
+        width: 102
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0983c1c002b9642bc45ed8589e27d3
+      internalID: 473423574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_154
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 2305
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eab785bce793b14d8db96ea5d130b91
+      internalID: -745632355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_155
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 2305
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35dc80c2e1aca0469798b3ae50fa89d
+      internalID: -249417820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_156
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 2313
+        width: 126
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f6e3618841bc44e85a31ed7c795dc3
+      internalID: -382851475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_157
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 2309
+        width: 102
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42721666d5fc2fe41be542ecd1cb54cb
+      internalID: 1136573161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_158
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 2305
+        width: 102
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9c8195abc87847831afaf462ad1b9
+      internalID: 2005862875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_159
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 2305
+        width: 110
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb9522fd2703ad44a3e67ecf8c10e84
+      internalID: 1371268953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_160
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 2301
+        width: 110
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7f939c30440f744bf6025a166ea87a
+      internalID: 847363446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_161
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 2301
+        width: 110
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd80074ca3d2cc6459e9bfcad394b9db
+      internalID: -801470153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_162
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 2317
+        width: 110
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdbe48dc224d0242969a9a405ddf3d1
+      internalID: 54414612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_163
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 2305
+        width: 110
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18e7e08b2811f9439cecafe9e7747d8
+      internalID: 401981435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_164
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 2305
+        width: 110
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83ab280599331c4fabb2036e2b15005
+      internalID: 1111922492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_165
+      rect:
+        serializedVersion: 2
+        x: 3017
+        y: 2305
+        width: 110
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a5ded727e92ee47939821a0ae42720
+      internalID: -2028024252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_166
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 2381
+        width: 94
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d47b999118173f448fc0a0f3013d1bb
+      internalID: 17969270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_167
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 2381
+        width: 94
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8160ead74f53c1b4aa6060844d97163d
+      internalID: 713466026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_168
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 2365
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fa0421ce864f7499aee8b082f26bc2
+      internalID: 1644925823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_169
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2057
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cff9ae8074021478c37dfb26b93bb1
+      internalID: 1686189282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_170
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2057
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30a264e0f032854e887b238e0e47b59
+      internalID: -1876500652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_171
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2057
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f3159e4741ccf47ab519d04f2a4086
+      internalID: -991426626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_172
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 2053
+        width: 102
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441141df5a27bd742b30d4eba0a5b5cb
+      internalID: -734944151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_173
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 2053
+        width: 110
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec9af196dceeed46bb378aa70e93b16
+      internalID: 1257662597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_174
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 2049
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0ee4c68228a7c4cb1286dc0aa5146b
+      internalID: -407544314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_175
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 2049
+        width: 102
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb71b99d071efa4eaf527e50acce393
+      internalID: 2129419999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_176
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 2045
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b484587e5c8bc147af10254f074efcb
+      internalID: 168848404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_177
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 2061
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625788e32095d8f4ca444f0e6e0501f8
+      internalID: -233503754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_178
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 2057
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50abf59f8a2a034d8b514c0b5d302dd
+      internalID: -954167037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_179
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2081
+        width: 102
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3b71518c306c743ade9a13e386bc27
+      internalID: -1769252448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_180
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 2177
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca55c9353752d246bc85cda3013b09c
+      internalID: -1444896640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_181
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2045
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d8aa36494b44648bb74b775334daac
+      internalID: 662783806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_182
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 2045
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eb3f61ffdd7084a90074c740dd8ac5
+      internalID: 1707787565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_183
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2045
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5fc2a2975309340907adf53b66b246
+      internalID: 2090472245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_184
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1661
+        width: 94
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915bdf6919daf63498d44f6fec93b662
+      internalID: -400205017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_185
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1669
+        width: 102
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03be2b1dd8810014fbdeeb9e06296ec0
+      internalID: -1500655922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_186
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1597
+        width: 102
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e86a6ff3786ee4184c1df35e0c1729
+      internalID: -1688531505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_187
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1649
+        width: 94
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18a4f8aa9448b94ea9bb544aaae712d
+      internalID: 34861621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_188
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1649
+        width: 94
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a02a946524c0524ba95b7961389b62d
+      internalID: 158915256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_189
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1357
+        width: 94
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60f949b1f64da74a889666f7c167677
+      internalID: -481258137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_190
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1353
+        width: 102
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f6acc31e633e04181376b385459a2c
+      internalID: 819210548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_191
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1305
+        width: 102
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5afac26c93e774985c5c0d01acb8bc
+      internalID: -1792130635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_192
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1361
+        width: 94
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbc4266172eb184d9182d7400ab04d2
+      internalID: -1411594479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_193
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1353
+        width: 94
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439f37dbbc4f8c745abbbc25fa3b8f4a
+      internalID: -1377740191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_194
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 637
+        width: 166
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd936ca5a52f9a045b95446d05c192e6
+      internalID: 929846047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_195
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 573
+        width: 254
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4223b33cf175b8d40ae8869181e79086
+      internalID: 1057715259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_196
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 641
+        width: 118
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1de78957a455042b489e3790bee81c
+      internalID: 182199733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_197
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 641
+        width: 118
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c607d820b2dc046ac1d3dd47410d84
+      internalID: -835004103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_198
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 765
+        width: 110
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9345a09ef0075b6468cfe82eed75fac6
+      internalID: -1717675446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_199
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 821
+        width: 86
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb32f973ab5e95143b0b18a9aafd82ca
+      internalID: 1884536484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2D Top Down 180 Vehicles ( size x4 )_200
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 761
+        width: 110
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c719be54fe1e9a4e94f7ca3e7c6cc87
+      internalID: -1549836835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2D Top Down 180 Vehicles ( size x4 )_144: -796323967
+      2D Top Down 180 Vehicles ( size x4 )_43: 1671358230
+      2D Top Down 180 Vehicles ( size x4 )_56: 1831770187
+      2D Top Down 180 Vehicles ( size x4 )_21: 308906093
+      2D Top Down 180 Vehicles ( size x4 )_114: -1353315193
+      2D Top Down 180 Vehicles ( size x4 )_88: 1633011116
+      2D Top Down 180 Vehicles ( size x4 )_65: -1347418786
+      2D Top Down 180 Vehicles ( size x4 )_172: -734944151
+      2D Top Down 180 Vehicles ( size x4 )_22: 224700607
+      2D Top Down 180 Vehicles ( size x4 )_24: -1769774667
+      2D Top Down 180 Vehicles ( size x4 )_158: 2005862875
+      2D Top Down 180 Vehicles ( size x4 )_110: 1830526613
+      2D Top Down 180 Vehicles ( size x4 )_55: 2046551048
+      2D Top Down 180 Vehicles ( size x4 )_32: -187125178
+      2D Top Down 180 Vehicles ( size x4 )_152: 2082572376
+      2D Top Down 180 Vehicles ( size x4 )_129: -182968217
+      2D Top Down 180 Vehicles ( size x4 )_93: -1308686298
+      2D Top Down 180 Vehicles ( size x4 )_118: 198264387
+      2D Top Down 180 Vehicles ( size x4 )_39: -53428106
+      2D Top Down 180 Vehicles ( size x4 )_126: -172347830
+      2D Top Down 180 Vehicles ( size x4 )_134: -52465089
+      2D Top Down 180 Vehicles ( size x4 )_139: -512013660
+      2D Top Down 180 Vehicles ( size x4 )_58: -383065929
+      2D Top Down 180 Vehicles ( size x4 )_5: -971509805
+      2D Top Down 180 Vehicles ( size x4 )_62: -1349025020
+      2D Top Down 180 Vehicles ( size x4 )_73: 2001532992
+      2D Top Down 180 Vehicles ( size x4 )_159: 1371268953
+      2D Top Down 180 Vehicles ( size x4 )_103: 227975806
+      2D Top Down 180 Vehicles ( size x4 )_28: -821173843
+      2D Top Down 180 Vehicles ( size x4 )_105: -276052828
+      2D Top Down 180 Vehicles ( size x4 )_64: 139804161
+      2D Top Down 180 Vehicles ( size x4 )_25: -1570248790
+      2D Top Down 180 Vehicles ( size x4 )_100: -856561712
+      2D Top Down 180 Vehicles ( size x4 )_0: 333876048
+      2D Top Down 180 Vehicles ( size x4 )_157: 1136573161
+      2D Top Down 180 Vehicles ( size x4 )_191: -1792130635
+      2D Top Down 180 Vehicles ( size x4 )_13: 78524139
+      2D Top Down 180 Vehicles ( size x4 )_16: 709384328
+      2D Top Down 180 Vehicles ( size x4 )_91: -1157189636
+      2D Top Down 180 Vehicles ( size x4 )_86: -1598139844
+      2D Top Down 180 Vehicles ( size x4 )_57: 1117108449
+      2D Top Down 180 Vehicles ( size x4 )_199: 1884536484
+      2D Top Down 180 Vehicles ( size x4 )_189: -481258137
+      2D Top Down 180 Vehicles ( size x4 )_52: -1245953238
+      2D Top Down 180 Vehicles ( size x4 )_113: 868787024
+      2D Top Down 180 Vehicles ( size x4 )_50: -1276838030
+      2D Top Down 180 Vehicles ( size x4 )_2: 1171001412
+      2D Top Down 180 Vehicles ( size x4 )_151: 152464911
+      2D Top Down 180 Vehicles ( size x4 )_182: 1707787565
+      2D Top Down 180 Vehicles ( size x4 )_171: -991426626
+      2D Top Down 180 Vehicles ( size x4 )_107: 393795160
+      2D Top Down 180 Vehicles ( size x4 )_154: -745632355
+      2D Top Down 180 Vehicles ( size x4 )_116: 1776000403
+      2D Top Down 180 Vehicles ( size x4 )_143: -97550791
+      2D Top Down 180 Vehicles ( size x4 )_54: 1850436671
+      2D Top Down 180 Vehicles ( size x4 )_1: -1006145808
+      2D Top Down 180 Vehicles ( size x4 )_69: 1078652583
+      2D Top Down 180 Vehicles ( size x4 )_41: 346976596
+      2D Top Down 180 Vehicles ( size x4 )_165: -2028024252
+      2D Top Down 180 Vehicles ( size x4 )_127: 1291515092
+      2D Top Down 180 Vehicles ( size x4 )_140: -985639253
+      2D Top Down 180 Vehicles ( size x4 )_77: -1744540241
+      2D Top Down 180 Vehicles ( size x4 )_145: -1473733771
+      2D Top Down 180 Vehicles ( size x4 )_15: 2128324038
+      2D Top Down 180 Vehicles ( size x4 )_63: 1513937381
+      2D Top Down 180 Vehicles ( size x4 )_141: 125529138
+      2D Top Down 180 Vehicles ( size x4 )_149: -814619642
+      2D Top Down 180 Vehicles ( size x4 )_8: 2118502445
+      2D Top Down 180 Vehicles ( size x4 )_4: -737353515
+      2D Top Down 180 Vehicles ( size x4 )_112: 313077078
+      2D Top Down 180 Vehicles ( size x4 )_142: 577233501
+      2D Top Down 180 Vehicles ( size x4 )_156: -382851475
+      2D Top Down 180 Vehicles ( size x4 )_186: -1688531505
+      2D Top Down 180 Vehicles ( size x4 )_192: -1411594479
+      2D Top Down 180 Vehicles ( size x4 )_167: 713466026
+      2D Top Down 180 Vehicles ( size x4 )_163: 401981435
+      2D Top Down 180 Vehicles ( size x4 )_175: 2129419999
+      2D Top Down 180 Vehicles ( size x4 )_197: -835004103
+      2D Top Down 180 Vehicles ( size x4 )_138: -459941447
+      2D Top Down 180 Vehicles ( size x4 )_19: -1180258911
+      2D Top Down 180 Vehicles ( size x4 )_48: -2120527845
+      2D Top Down 180 Vehicles ( size x4 )_153: 473423574
+      2D Top Down 180 Vehicles ( size x4 )_177: -233503754
+      2D Top Down 180 Vehicles ( size x4 )_121: -126417881
+      2D Top Down 180 Vehicles ( size x4 )_89: 1457481449
+      2D Top Down 180 Vehicles ( size x4 )_164: 1111922492
+      2D Top Down 180 Vehicles ( size x4 )_61: 1246806801
+      2D Top Down 180 Vehicles ( size x4 )_128: -945119075
+      2D Top Down 180 Vehicles ( size x4 )_183: 2090472245
+      2D Top Down 180 Vehicles ( size x4 )_17: 2107157030
+      2D Top Down 180 Vehicles ( size x4 )_137: -693546794
+      2D Top Down 180 Vehicles ( size x4 )_45: -1399389711
+      2D Top Down 180 Vehicles ( size x4 )_84: 1173509107
+      2D Top Down 180 Vehicles ( size x4 )_20: -532902155
+      2D Top Down 180 Vehicles ( size x4 )_120: -981822593
+      2D Top Down 180 Vehicles ( size x4 )_193: -1377740191
+      2D Top Down 180 Vehicles ( size x4 )_18: -895267195
+      2D Top Down 180 Vehicles ( size x4 )_104: -822622302
+      2D Top Down 180 Vehicles ( size x4 )_53: 1193127813
+      2D Top Down 180 Vehicles ( size x4 )_79: -1162467364
+      2D Top Down 180 Vehicles ( size x4 )_14: -550565875
+      2D Top Down 180 Vehicles ( size x4 )_150: -2055758997
+      2D Top Down 180 Vehicles ( size x4 )_87: 1146296582
+      2D Top Down 180 Vehicles ( size x4 )_37: 477409996
+      2D Top Down 180 Vehicles ( size x4 )_179: -1769252448
+      2D Top Down 180 Vehicles ( size x4 )_67: -698279652
+      2D Top Down 180 Vehicles ( size x4 )_124: -1801294386
+      2D Top Down 180 Vehicles ( size x4 )_106: -1183273173
+      2D Top Down 180 Vehicles ( size x4 )_81: -1459451291
+      2D Top Down 180 Vehicles ( size x4 )_60: -585825128
+      2D Top Down 180 Vehicles ( size x4 )_190: 819210548
+      2D Top Down 180 Vehicles ( size x4 )_146: -220795594
+      2D Top Down 180 Vehicles ( size x4 )_47: -421942690
+      2D Top Down 180 Vehicles ( size x4 )_90: -1666558359
+      2D Top Down 180 Vehicles ( size x4 )_36: 424010547
+      2D Top Down 180 Vehicles ( size x4 )_194: 929846047
+      2D Top Down 180 Vehicles ( size x4 )_195: 1057715259
+      2D Top Down 180 Vehicles ( size x4 )_85: 414850741
+      2D Top Down 180 Vehicles ( size x4 )_34: 633989345
+      2D Top Down 180 Vehicles ( size x4 )_80: -1652400044
+      2D Top Down 180 Vehicles ( size x4 )_23: 38550092
+      2D Top Down 180 Vehicles ( size x4 )_99: 212018739
+      2D Top Down 180 Vehicles ( size x4 )_108: 1890063814
+      2D Top Down 180 Vehicles ( size x4 )_98: 764087668
+      2D Top Down 180 Vehicles ( size x4 )_75: 1096712837
+      2D Top Down 180 Vehicles ( size x4 )_125: 1527653176
+      2D Top Down 180 Vehicles ( size x4 )_178: -954167037
+      2D Top Down 180 Vehicles ( size x4 )_26: -350186507
+      2D Top Down 180 Vehicles ( size x4 )_35: -442995963
+      2D Top Down 180 Vehicles ( size x4 )_170: -1876500652
+      2D Top Down 180 Vehicles ( size x4 )_102: 1730365227
+      2D Top Down 180 Vehicles ( size x4 )_117: 1846678128
+      2D Top Down 180 Vehicles ( size x4 )_29: 731217243
+      2D Top Down 180 Vehicles ( size x4 )_174: -407544314
+      2D Top Down 180 Vehicles ( size x4 )_155: -249417820
+      2D Top Down 180 Vehicles ( size x4 )_10: 867335009
+      2D Top Down 180 Vehicles ( size x4 )_162: 54414612
+      2D Top Down 180 Vehicles ( size x4 )_30: 40885022
+      2D Top Down 180 Vehicles ( size x4 )_119: -295597446
+      2D Top Down 180 Vehicles ( size x4 )_122: -778328028
+      2D Top Down 180 Vehicles ( size x4 )_169: 1686189282
+      2D Top Down 180 Vehicles ( size x4 )_136: 917872030
+      2D Top Down 180 Vehicles ( size x4 )_74: -1975170233
+      2D Top Down 180 Vehicles ( size x4 )_111: 426610135
+      2D Top Down 180 Vehicles ( size x4 )_187: 34861621
+      2D Top Down 180 Vehicles ( size x4 )_83: -1269821007
+      2D Top Down 180 Vehicles ( size x4 )_161: -801470153
+      2D Top Down 180 Vehicles ( size x4 )_135: -545481880
+      2D Top Down 180 Vehicles ( size x4 )_180: -1444896640
+      2D Top Down 180 Vehicles ( size x4 )_42: 469376155
+      2D Top Down 180 Vehicles ( size x4 )_71: 552365286
+      2D Top Down 180 Vehicles ( size x4 )_92: 258081295
+      2D Top Down 180 Vehicles ( size x4 )_96: 1246178576
+      2D Top Down 180 Vehicles ( size x4 )_131: -719928134
+      2D Top Down 180 Vehicles ( size x4 )_3: -510417968
+      2D Top Down 180 Vehicles ( size x4 )_27: -336122021
+      2D Top Down 180 Vehicles ( size x4 )_148: -521723306
+      2D Top Down 180 Vehicles ( size x4 )_7: 1109665993
+      2D Top Down 180 Vehicles ( size x4 )_97: 1326495760
+      2D Top Down 180 Vehicles ( size x4 )_38: -445252782
+      2D Top Down 180 Vehicles ( size x4 )_115: -1505549770
+      2D Top Down 180 Vehicles ( size x4 )_166: 17969270
+      2D Top Down 180 Vehicles ( size x4 )_33: 664057318
+      2D Top Down 180 Vehicles ( size x4 )_66: 1003124988
+      2D Top Down 180 Vehicles ( size x4 )_109: -685220455
+      2D Top Down 180 Vehicles ( size x4 )_82: 1395939463
+      2D Top Down 180 Vehicles ( size x4 )_198: -1717675446
+      2D Top Down 180 Vehicles ( size x4 )_11: -1847672682
+      2D Top Down 180 Vehicles ( size x4 )_46: -1894634425
+      2D Top Down 180 Vehicles ( size x4 )_176: 168848404
+      2D Top Down 180 Vehicles ( size x4 )_188: 158915256
+      2D Top Down 180 Vehicles ( size x4 )_40: -1622547265
+      2D Top Down 180 Vehicles ( size x4 )_70: 1203194325
+      2D Top Down 180 Vehicles ( size x4 )_168: 1644925823
+      2D Top Down 180 Vehicles ( size x4 )_196: 182199733
+      2D Top Down 180 Vehicles ( size x4 )_31: 725035379
+      2D Top Down 180 Vehicles ( size x4 )_132: 1951229697
+      2D Top Down 180 Vehicles ( size x4 )_160: 847363446
+      2D Top Down 180 Vehicles ( size x4 )_68: -1052248915
+      2D Top Down 180 Vehicles ( size x4 )_173: 1257662597
+      2D Top Down 180 Vehicles ( size x4 )_130: -1004213520
+      2D Top Down 180 Vehicles ( size x4 )_59: 99926150
+      2D Top Down 180 Vehicles ( size x4 )_9: -1297381620
+      2D Top Down 180 Vehicles ( size x4 )_181: 662783806
+      2D Top Down 180 Vehicles ( size x4 )_49: -385060788
+      2D Top Down 180 Vehicles ( size x4 )_12: -957756401
+      2D Top Down 180 Vehicles ( size x4 )_6: 205956601
+      2D Top Down 180 Vehicles ( size x4 )_123: 1596046628
+      2D Top Down 180 Vehicles ( size x4 )_78: 1511422426
+      2D Top Down 180 Vehicles ( size x4 )_101: 369674522
+      2D Top Down 180 Vehicles ( size x4 )_95: -2053819194
+      2D Top Down 180 Vehicles ( size x4 )_94: 1400985914
+      2D Top Down 180 Vehicles ( size x4 )_133: 1175953933
+      2D Top Down 180 Vehicles ( size x4 )_200: -1549836835
+      2D Top Down 180 Vehicles ( size x4 )_184: -400205017
+      2D Top Down 180 Vehicles ( size x4 )_72: 757945980
+      2D Top Down 180 Vehicles ( size x4 )_51: 1799524544
+      2D Top Down 180 Vehicles ( size x4 )_44: 1671832256
+      2D Top Down 180 Vehicles ( size x4 )_147: 745618070
+      2D Top Down 180 Vehicles ( size x4 )_185: -1500655922
+      2D Top Down 180 Vehicles ( size x4 )_76: -1012642415
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
