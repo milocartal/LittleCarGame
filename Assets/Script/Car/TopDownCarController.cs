@@ -311,4 +311,10 @@ public class TopDownCarController : MonoBehaviour
             Jump(jumpData.jumpHeightScale, jumpData.jumpPushScale, carCollider.gameObject.layer);
         }
     }
+
+    public void SaveChrono()
+    {
+        SaveSystem.SaveChrono(GameManager.instance);
+        Debug.Log("Save Completed");
+    }
 }
