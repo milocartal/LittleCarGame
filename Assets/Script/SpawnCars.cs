@@ -51,6 +51,7 @@ public class SpawnCars : MonoBehaviour
                     if (driverInfo.isAI)
                     {
                         car.GetComponent<CarInputHandler>().enabled = false;
+                        car.GetComponent<TopDownCarController>().driftFactor = 0;
                         car.tag = "AI";
                     }
                     else
