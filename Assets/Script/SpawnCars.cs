@@ -52,6 +52,7 @@ public class SpawnCars : MonoBehaviour
                     {
                         car.GetComponent<CarInputHandler>().enabled = false;
                         car.GetComponent<TopDownCarController>().driftFactor = 0;
+                        car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
                         car.tag = "AI";
                     }
                     else

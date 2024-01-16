@@ -9,6 +9,7 @@ public class TopDownCarController : MonoBehaviour
     public float accelerationFactor = 30.0f;
     public float turnFactor = 3.5f;
     public float maxSpeed = 20;
+    public float jumpFactor = 10f;
 
     [Header("Sprites")]
     public SpriteRenderer carSpriteRenderer;
@@ -219,7 +220,7 @@ public class TopDownCarController : MonoBehaviour
         carShadowRenderer.sortingLayerName = "Flying";
 
         //Push the object forward as we passed a jump
-        carRigidbody2D.AddForce(carRigidbody2D.velocity.normalized * jumpPushScale * 10, ForceMode2D.Impulse);
+        carRigidbody2D.AddForce(carRigidbody2D.velocity.normalized * jumpPushScale * jumpFactor, ForceMode2D.Impulse);
 
         while (isJumping)
         {
