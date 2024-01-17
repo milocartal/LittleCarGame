@@ -802,7 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surfaceLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4160
 --- !u!114 &4751765595567230924
 MonoBehaviour:
   m_ObjectHideFlags: 0

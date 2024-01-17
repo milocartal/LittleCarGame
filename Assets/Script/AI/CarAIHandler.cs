@@ -11,7 +11,7 @@ public class CarAIHandler : MonoBehaviour
     public AIMode aiMode;
     public float maxSpeed = 16;
     public bool isAvoidingCars = true;
-    [Range(0.0f, 1.0f)]
+    [Range(0.0f, 2.0f)]
     public float skillLevel = 1.0f;
 
     //Local variables

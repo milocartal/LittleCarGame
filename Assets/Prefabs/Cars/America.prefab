@@ -1232,6 +1232,7 @@ MonoBehaviour:
   accelerationFactor: 40
   turnFactor: 2
   maxSpeed: 15
+  jumpFactor: 10
   carSpriteRenderer: {fileID: 7606043189569729623}
   carShadowRenderer: {fileID: 7606043188022790117}
   jumpCurve:
@@ -1303,7 +1304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surfaceLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4160
 --- !u!114 &7606043188464587674
 MonoBehaviour:
   m_ObjectHideFlags: 0
