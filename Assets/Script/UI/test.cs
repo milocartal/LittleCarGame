@@ -65,7 +65,7 @@ public class test : MonoBehaviour
 
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("test");
+        SceneManager.LoadScene("Circuit 01");
     }
 
 }
