@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TeleportToCircuit : MonoBehaviour
 {
-    public string DestinationCircuit;
 
-    public void GoToCircuit_X()
+    public void GoToCircuit_X(string DestinationCircuit)
     {
         SceneManager.LoadScene(DestinationCircuit);
     }

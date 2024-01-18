@@ -10,6 +10,9 @@ public class CarData : ScriptableObject
     private int carUniqueID = 0;
 
     [SerializeField]
+    private float carName;
+
+    [SerializeField]
     private Sprite carUISprite;
 
     [SerializeField]
@@ -19,6 +22,11 @@ public class CarData : ScriptableObject
     {
         get { return carUniqueID; }
     }
+    public float CarName
+    {
+        get { return carName; }
+    }
+
     public Sprite CarUISprite
     {
         get { return carUISprite; }
