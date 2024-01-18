@@ -7,6 +7,15 @@ using UnityEngine.SceneManagement;
 public class test : MonoBehaviour
 {
 
+    [Header("Car prefab")]
+    public GameObject carPrefab;
+
+    [Header("Spawn on")]
+    public Transform spawnOnTransform;
+
+    //Other components
+    CarUIHandler carUIHandler = null;
+
 
     //Array de carDatas
     CarData[] carDatas;
@@ -22,6 +31,10 @@ public class test : MonoBehaviour
     {
         //Load the car data
         carDatas = Resources.LoadAll<CarData>("CarData/");
+
+        GameObject instantiatedCar = Instantiate(carPrefab, spawnOnTransform);
+
+        carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
 
     }
 
@@ -57,7 +70,8 @@ public class test : MonoBehaviour
         SceneManager.LoadScene("Circuit 01");
     }
 
-    public void OnSelectCar2()
+    //Permettra de definir que le bouton 1 aura la voiture avec l'ID 1
+    public void OnSelectCar2(int selectedCarIndexPublic)
     {
         PlayerPrefs.SetInt("P1SelectedCarID", carDatas[selectedCarIndexPublic].CarUniqueID);
         PlayerPrefs.SetInt("P2SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
@@ -65,7 +79,7 @@ public class test : MonoBehaviour
 
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("Circuit 01");
+        //SceneManager.LoadScene("Circuit 01");
     }
 
 }
