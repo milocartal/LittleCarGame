@@ -21,20 +21,42 @@ public class test : MonoBehaviour
     CarData[] carDatas;
 
     //Index de la voiture
-    int selectedCarIndex = 0;
-    public int selectedCarIndexPublic = 1;
+    int selectedCarIndex = 1;
+    //public int selectedCarIndexPublic = 1;
 
-    //Other components
+    //Pour la boucle de création
+    private GameObject TempCar;
+    private Vector3 VectTempCar;
+    private int indexCarSelected_Pour_Boucle = 0;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
+
+        VectTempCar = spawnOnTransform.position;
+        VectTempCar.x -= 180;
+        VectTempCar.y += 143;
         //Load the car data
         carDatas = Resources.LoadAll<CarData>("CarData/");
 
-        GameObject instantiatedCar = Instantiate(carPrefab, spawnOnTransform);
+        Instantiate(carPrefab);
 
-        carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
+        //GameObject instantiatedCar = Instantiate(carPrefab, spawnOnTransform);
+
+        //carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
+
+        //On va crée des boutons
+        for (int i = 1; i < carDatas.Length; i++)
+        {
+            TempCar = Instantiate(carPrefab, VectTempCar, spawnOnTransform.rotation ,spawnOnTransform);
+            carUIHandler = TempCar.GetComponent<CarUIHandler>();
+            carUIHandler.SetupCar(carDatas[i]);
+            //VectTempCar.x += 100;
+            indexCarSelected_Pour_Boucle += 1;
+            OnSelectCar2();
+        }
 
     }
 
@@ -71,10 +93,10 @@ public class test : MonoBehaviour
     }
 
     //Permettra de definir que le bouton 1 aura la voiture avec l'ID 1
-    public void OnSelectCar2(int selectedCarIndexPublic)
+    public void OnSelectCar2()
     {
-        PlayerPrefs.SetInt("P1SelectedCarID", carDatas[selectedCarIndexPublic].CarUniqueID);
-        PlayerPrefs.SetInt("P2SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
+        PlayerPrefs.SetInt("P1SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
+        PlayerPrefs.SetInt("P2SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
 
 
         PlayerPrefs.Save();
