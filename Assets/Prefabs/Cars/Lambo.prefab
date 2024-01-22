@@ -15959,6 +15959,7 @@ GameObject:
   - component: {fileID: 7638587268796254430}
   - component: {fileID: 7638587268796254401}
   - component: {fileID: 7638587268796254406}
+  - component: {fileID: 4261883406758123920}
   m_Layer: 0
   m_Name: Lambo
   m_TagString: Untagged
@@ -16128,6 +16129,19 @@ MonoBehaviour:
   surfaceLayer:
     serializedVersion: 2
     m_Bits: 4160
+--- !u!114 &4261883406758123920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638587268796254407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebugActiveForCar: 1
 --- !u!1 &7638587269001201717
 GameObject:
   m_ObjectHideFlags: 0

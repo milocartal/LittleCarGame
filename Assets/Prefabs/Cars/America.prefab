@@ -1168,6 +1168,7 @@ GameObject:
   - component: {fileID: 7606043188464587674}
   - component: {fileID: 6372844658677068868}
   - component: {fileID: 6372844658677068869}
+  - component: {fileID: -3049545922792838516}
   m_Layer: 0
   m_Name: America
   m_TagString: Untagged
@@ -1351,6 +1352,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carSpriteObject: {fileID: 7606043189569729620}
   ghostCarPlaybackPrefab: {fileID: 8365524435586326021, guid: 7a10f2e7c8df9364eb3d4c37c30f2864, type: 3}
+--- !u!114 &-3049545922792838516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606043188464587651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebugActiveForCar: 1
 --- !u!1 &7606043188541048068
 GameObject:
   m_ObjectHideFlags: 0

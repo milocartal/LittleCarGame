@@ -8,10 +8,10 @@ using UnityEditor;
 
 public class AStarLite : MonoBehaviour
 {
-    int gridSizeX = 50;
-    int gridSizeY = 30;
+    int gridSizeX = 350;
+    int gridSizeY = 250;
 
-    float cellSize = 2;
+    float cellSize = 1;
 
     AStarNode[,] aStarNodes;
 
@@ -58,6 +58,9 @@ public class AStarLite : MonoBehaviour
 
                     //Ignore player cars, they are not obstacles
                     if (hitCollider2D.transform.root.CompareTag("Player"))
+                        continue;
+
+                    if (hitCollider2D.transform.CompareTag("Circuit"))
                         continue;
 
                     //Mark as obstacle
