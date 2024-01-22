@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class TopDownCarController : MonoBehaviour
 {
+    public enum TypeCar { Sport, Poids_Lourd, Tout_Terrain, Moto, Special };
+
+    [Header("TypeCar")]
+    public TypeCar carType;
+
+
     [Header("Car settings")]
     public float driftFactor = 0.95f;
     public float accelerationFactor = 30.0f;
