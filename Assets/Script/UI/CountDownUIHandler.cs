@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CountDownUIHandler : MonoBehaviour
 {
-    public Text countDownText;
+    public TMP_Text countDownText;
 
     private void Awake()
     {
