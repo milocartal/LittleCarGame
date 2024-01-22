@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd78d901656ad04780a27892ace867d, type: 3}
+  m_Name: 0_Porsche
+  m_EditorClassIdentifier: 
+  carUniqueID: 0
+  carName: 'Blue Porsche '
+  carUISprite: {fileID: -585825128, guid: 020d983659245af40b65fe4ee9a63425, type: 3}
+  carPrefab: {fileID: 8717257106001987611, guid: b4b017073ea9b0e4ab3888d4e92c4396, type: 3}

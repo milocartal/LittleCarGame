@@ -63,7 +63,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
-        Debug.Log("Doit amener aux MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame ()

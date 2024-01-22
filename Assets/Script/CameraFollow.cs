@@ -8,12 +8,29 @@ public class CameraFollow : MonoBehaviour
     private float smoothTime = 0.1f;
     private Vector3 velocity = Vector3.zero;
 
-    [SerializeField] private Transform target;
+    //[SerializeField] private Transform target;
+    //target = Transform.FindGameObjectsWithTag("Player");
+    //GameObject[] target = GameObject.FindGameObjectsWithTag("Player");
+    private Transform targetPlayer;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        Vector3 targetPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        targetPlayer = GameObject.FindWithTag("Player").transform;
+    }
+
+
+// Update is called once per frame
+void Update()
+    {
+        if (!targetPlayer)
+        {
+            targetPlayer = GameObject.FindWithTag("Player").transform;
+        }
+        else
+        {
+            Vector3 targetPosition = targetPlayer.position + offset;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
+
     }
 }
