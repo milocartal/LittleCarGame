@@ -15019,7 +15019,6 @@ GameObject:
   - component: {fileID: 2334905110415381324}
   - component: {fileID: 1268269462521033874}
   - component: {fileID: 1268269462521033869}
-  - component: {fileID: 4631897462506030866}
   - component: {fileID: 1268269462521033866}
   m_Layer: 0
   m_Name: Porsche
@@ -15166,7 +15165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268269462521033867}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de5c6a6003fbcb34ca1d5e1602eb5370, type: 3}
   m_Name: 
@@ -15175,19 +15174,6 @@ MonoBehaviour:
   maxSpeed: 16
   isAvoidingCars: 1
   skillLevel: 1
---- !u!114 &4631897462506030866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268269462521033867}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDebugActiveForCar: 0
 --- !u!114 &1268269462521033866
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15035,9 +15035,7 @@ GameObject:
   - component: {fileID: 2397410280912051985}
   - component: {fileID: 1205764558449735890}
   - component: {fileID: 2397410280912051980}
-  - component: {fileID: 2397410280912051981}
   - component: {fileID: 2397410280912051987}
-  - component: {fileID: 8114164477712133260}
   - component: {fileID: 2397410280912051988}
   m_Layer: 0
   m_Name: FordGT
@@ -15099,6 +15097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5752b921e943488eafc846551fa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carType: 0
   driftFactor: 0.95
   accelerationFactor: 30
   turnFactor: 3.5
@@ -15176,20 +15175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carOutlineSpriteRenderer: {fileID: 2397410281315861615}
---- !u!114 &2397410280912051981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2397410280912051989}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd1eaad36ff33b41a174501c0b8b1bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carSpriteObject: {fileID: 2397410279735621826}
-  ghostCarPlaybackPrefab: {fileID: 8365524435586326021, guid: 7a10f2e7c8df9364eb3d4c37c30f2864, type: 3}
 --- !u!114 &2397410280912051987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15197,7 +15182,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2397410280912051989}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de5c6a6003fbcb34ca1d5e1602eb5370, type: 3}
   m_Name: 
@@ -15206,19 +15191,6 @@ MonoBehaviour:
   maxSpeed: 16
   isAvoidingCars: 1
   skillLevel: 1
---- !u!114 &8114164477712133260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2397410280912051989}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDebugActiveForCar: 0
 --- !u!114 &2397410280912051988
 MonoBehaviour:
   m_ObjectHideFlags: 0
