@@ -1170,7 +1170,7 @@ GameObject:
   - component: {fileID: 6372844658677068869}
   m_Layer: 0
   m_Name: 4X4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,6 +1228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5752b921e943488eafc846551fa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carType: 0
   driftFactor: 0.9
   accelerationFactor: 25
   turnFactor: 2.5

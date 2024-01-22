@@ -1691,8 +1691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4601a516c1b388e409e311c7fcb32a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefab: {fileID: 8717257106001987611, guid: b4b017073ea9b0e4ab3888d4e92c4396, type: 3}
-  spawnOnTransform: {fileID: 0}
+  carPrefab: {fileID: 7053301906912171386, guid: b1a3e057bb9a23a40a0d91dfe37c00fc, type: 3}
+  spawnOnTransform: {fileID: 1288146184}
 --- !u!1 &851322574
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 public class test : MonoBehaviour
 {
 
+    //Mettre BoutonVoiture
     [Header("Car prefab")]
     public GameObject carPrefab;
 
+    //Mettre Choix_Voiture_Section (Canvas)
     [Header("Spawn on")]
     public Transform spawnOnTransform;
 
@@ -53,13 +55,13 @@ public class test : MonoBehaviour
             TempCar = Instantiate(carPrefab, VectTempCar, spawnOnTransform.rotation ,spawnOnTransform);
             carUIHandler = TempCar.GetComponent<CarUIHandler>();
             carUIHandler.SetupCar(carDatas[i]);
-            //VectTempCar.x += 100;
+            //Escape entre le deuxième et le troisième bouton
+            VectTempCar.x += 300;
             indexCarSelected_Pour_Boucle += 1;
             OnSelectCar2();
         }
 
     }
-
 
 
     public void OnSelectCar()
@@ -96,7 +98,7 @@ public class test : MonoBehaviour
     public void OnSelectCar2()
     {
         PlayerPrefs.SetInt("P1SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
-        PlayerPrefs.SetInt("P2SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
+        //PlayerPrefs.SetInt("P2SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
 
 
         PlayerPrefs.Save();
