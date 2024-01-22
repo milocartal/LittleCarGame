@@ -11,6 +11,7 @@ public class SpawnCars : MonoBehaviour
     void Start()
     {
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        
 
         //Ensure that the spawn points are sorted by name
         spawnPoints = spawnPoints.ToList().OrderBy(s => s.name).ToArray();
@@ -34,6 +35,7 @@ public class SpawnCars : MonoBehaviour
             DriverInfo driverInfo = driverInfoList[0];
 
             int selectedCarID = driverInfo.carUniqueID;
+            Debug.Log(spawnPoints.Length);
 
             //Find the selected car
             foreach (CarData cardata in carDatas)
@@ -58,7 +60,7 @@ public class SpawnCars : MonoBehaviour
                     else
                     {
                         car.GetComponent<CarAIHandler>().enabled = false;
-                        car.GetComponent<AStarLite>().enabled = false;
+                        //car.GetComponent<AStarLite>().enabled = false;
                         car.tag = "Player";
                     }
 

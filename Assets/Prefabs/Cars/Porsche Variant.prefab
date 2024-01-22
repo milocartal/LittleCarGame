@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1268269462521033869, guid: 611e8aae8ffec1f48bca1449c7d74e16, type: 3}
+      propertyPath: isAvoidingCars
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1268269462521033872, guid: 611e8aae8ffec1f48bca1449c7d74e16, type: 3}
       propertyPath: m_RootOrder
       value: 0

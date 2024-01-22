@@ -14,12 +14,18 @@ public class test : MonoBehaviour
     [Header("Spawn on")]
     public Transform spawnOnTransform;
 
+    public PlayMenuManager PlayMenuM;
+
+
     //Other components
     CarUIHandler carUIHandler = null;
 
 
     //Array de carDatas
     CarData[] carDatas;
+
+
+
 
     //Index de la voiture
     int selectedCarIndex = 1;
@@ -32,10 +38,16 @@ public class test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayMenuManager PlayMenuM = null;
+
+        //PlayMenuM = FindObjectOfType<PlayMenuManager>();
+
         carDatas = Resources.LoadAll<CarData>("CarData/");
         VectTempCar = spawnOnTransform.position;
+        VectTempCar.x -= 180;
         VectTempCar.y += 143;
         //Load the car data
+        //Instantiate(carPrefab);
 
         //On va crée des boutons
         for (int i = 0; i < carDatas.Length; i++)
@@ -44,7 +56,7 @@ public class test : MonoBehaviour
             TempCar = Instantiate(carPrefab, VectTempCar, spawnOnTransform.rotation ,spawnOnTransform);
             carUIHandler = TempCar.GetComponent<CarUIHandler>();
             carUIHandler.SetupCar(carDatas[i]);
-            VectTempCar.x += 150;
+            VectTempCar.x += 200;
             
             Button tempBtn = TempCar.GetComponent<Button>();
             tempBtn.onClick.AddListener(() => { OnSelectCar(tempId); });
@@ -81,7 +93,12 @@ public class test : MonoBehaviour
 
         }
 
-        SceneManager.LoadScene("Circuit 01");
+        PlayMenuM.GetComponent<PlayMenuManager>().Go_To_Choix_Car_For_Course_Simple_Menu();
+
+        //PlayerPrefs.SetInt("P1SelectedCarID", carDatas[id].carUniqueID);
+        //PlayerPrefs.Save();
+
+        //PlayerPrefs.Save();
     }
 
 }
