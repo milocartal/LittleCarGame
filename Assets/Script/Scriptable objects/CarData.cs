@@ -7,7 +7,7 @@ using UnityEngine;
 public class CarData : ScriptableObject
 {
     [SerializeField]
-    private int carUniqueID = 0;
+    public int carUniqueID = 0;
 
     [SerializeField]
     private string carName;

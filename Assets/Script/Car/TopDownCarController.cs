@@ -58,8 +58,8 @@ public class TopDownCarController : MonoBehaviour
     //Frame-rate independent for physics calculations.
     void FixedUpdate()
     {
-        //if (GameManager.instance.GetGameState() == GameStates.countDown)
-        //  return;
+        if (GameManager.instance.GetGameState() == GameStates.countDown)
+          return;
 
         ApplyEngineForce();
 

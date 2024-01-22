@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 using System.IO;
+using Unity.VisualScripting;
 
 public enum GameStates { countDown, running, raceOver };
 
@@ -11,6 +12,28 @@ public class GameManager : MonoBehaviour
 {
     //Static instance of GameManager so other scripts can access it
     public static GameManager instance = null;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            // Si l'instance n'existe pas, essayez de la trouver dans la scène
+            if (instance == null)
+            {
+                instance = FindObjectOfType<GameManager>();
+
+                // Si elle n'existe toujours pas, créez un nouvel objet GameManager
+                if (instance == null)
+                {
+                    GameObject gameManagerObject = new GameObject("GameManager");
+                    instance = gameManagerObject.AddComponent<GameManager>();
+                }
+            }
+
+            return instance;
+        }
+    }
+
 
     //States
     GameStates gameState = GameStates.countDown;

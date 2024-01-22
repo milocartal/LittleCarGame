@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class test : MonoBehaviour
 {
 
-    //Mettre BoutonVoiture
     [Header("Car prefab")]
     public GameObject carPrefab;
 
-    //Mettre Choix_Voiture_Section (Canvas)
     [Header("Spawn on")]
     public Transform spawnOnTransform;
 
@@ -29,46 +28,37 @@ public class test : MonoBehaviour
     //Pour la boucle de création
     private GameObject TempCar;
     private Vector3 VectTempCar;
-    private int indexCarSelected_Pour_Boucle = 0;
-
-    
 
     // Start is called before the first frame update
     void Start()
     {
-
+        carDatas = Resources.LoadAll<CarData>("CarData/");
         VectTempCar = spawnOnTransform.position;
-        VectTempCar.x -= 180;
         VectTempCar.y += 143;
         //Load the car data
-        carDatas = Resources.LoadAll<CarData>("CarData/");
-
-        Instantiate(carPrefab);
-
-        //GameObject instantiatedCar = Instantiate(carPrefab, spawnOnTransform);
-
-        //carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
 
         //On va crée des boutons
-        for (int i = 1; i < carDatas.Length; i++)
+        for (int i = 0; i < carDatas.Length; i++)
         {
+            int tempId = carDatas[i].carUniqueID;
             TempCar = Instantiate(carPrefab, VectTempCar, spawnOnTransform.rotation ,spawnOnTransform);
             carUIHandler = TempCar.GetComponent<CarUIHandler>();
             carUIHandler.SetupCar(carDatas[i]);
-            //Escape entre le deuxième et le troisième bouton
-            VectTempCar.x += 300;
-            indexCarSelected_Pour_Boucle += 1;
-            OnSelectCar2();
+            VectTempCar.x += 150;
+            
+            Button tempBtn = TempCar.GetComponent<Button>();
+            tempBtn.onClick.AddListener(() => { OnSelectCar(tempId); });
         }
 
     }
 
 
-    public void OnSelectCar()
+
+    public void OnSelectCar(int id)
     {
         GameManager.instance.ClearDriversList();
 
-        GameManager.instance.AddDriverToList(1, "P1", carDatas[selectedCarIndex].CarUniqueID, false);
+        GameManager.instance.AddDriverToList(1, "P1", carDatas[id].CarUniqueID, false);
 
         //Create a new list of cars
         List<CarData> uniqueCars = new List<CarData>(carDatas);
@@ -92,18 +82,6 @@ public class test : MonoBehaviour
         }
 
         SceneManager.LoadScene("Circuit 01");
-    }
-
-    //Permettra de definir que le bouton 1 aura la voiture avec l'ID 1
-    public void OnSelectCar2()
-    {
-        PlayerPrefs.SetInt("P1SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
-        //PlayerPrefs.SetInt("P2SelectedCarID", carDatas[indexCarSelected_Pour_Boucle].CarUniqueID);
-
-
-        PlayerPrefs.Save();
-
-        //SceneManager.LoadScene("Circuit 01");
     }
 
 }

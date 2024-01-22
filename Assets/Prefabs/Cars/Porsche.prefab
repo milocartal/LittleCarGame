@@ -15018,7 +15018,6 @@ GameObject:
   - component: {fileID: 1268269462521033871}
   - component: {fileID: 2334905110415381324}
   - component: {fileID: 1268269462521033874}
-  - component: {fileID: 1268269462521033875}
   - component: {fileID: 1268269462521033869}
   - component: {fileID: 4631897462506030866}
   - component: {fileID: 1268269462521033866}
@@ -15160,20 +15159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carOutlineSpriteRenderer: {fileID: 1268269462924619761}
---- !u!114 &1268269462521033875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268269462521033867}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd1eaad36ff33b41a174501c0b8b1bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carSpriteObject: {fileID: 1268269461549978460}
-  ghostCarPlaybackPrefab: {fileID: 8365524435586326021, guid: 7a10f2e7c8df9364eb3d4c37c30f2864, type: 3}
 --- !u!114 &1268269462521033869
 MonoBehaviour:
   m_ObjectHideFlags: 0
