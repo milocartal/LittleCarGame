@@ -15,7 +15,7 @@ public class SpawnCar2 : MonoBehaviour
         List<DriverInfo> driverInfoList = new List<DriverInfo>(GameManager.instance.GetDriverList());
 
         //Sort the drivers based on last position
-        driverInfoList = driverInfoList.OrderBy(s => s.lastRacePosition).ToList();
+        //driverInfoList = driverInfoList.OrderBy(s => s.lastRacePosition).ToList();
 
         for (int i  = 0; i < spawnPoints.Length; i++)
         {
