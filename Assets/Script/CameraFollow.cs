@@ -11,11 +11,11 @@ public class CameraFollow : MonoBehaviour
     //[SerializeField] private Transform target;
     //target = Transform.FindGameObjectsWithTag("Player");
     //GameObject[] target = GameObject.FindGameObjectsWithTag("Player");
-    private Transform targetPlayer;
+    private GameObject targetPlayer;
 
     void Start()
     {
-        targetPlayer = GameObject.FindWithTag("Player").transform;
+        targetPlayer = GameObject.FindWithTag("Player");
     }
 
 
@@ -24,11 +24,11 @@ void Update()
     {
         if (!targetPlayer)
         {
-            targetPlayer = GameObject.FindWithTag("Player").transform;
+            targetPlayer = GameObject.FindWithTag("Player");
         }
         else
         {
-            Vector3 targetPosition = targetPlayer.position + offset;
+            Vector3 targetPosition = targetPlayer.transform.position + offset;
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
         }
 

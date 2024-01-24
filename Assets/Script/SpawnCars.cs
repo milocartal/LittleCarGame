@@ -51,6 +51,7 @@ public class SpawnCars : MonoBehaviour
 
                     car.name = driverInfo.name;
 
+                    car.transform.rotation = Quaternion.Euler(0, 0, RotationCar);
                     car.GetComponent<CarInputHandler>().playerNumber = driverInfo.playerNumber;
 
                     if (driverInfo.isAI)
@@ -59,12 +60,11 @@ public class SpawnCars : MonoBehaviour
                         car.GetComponent<TopDownCarController>().driftFactor = 0;
                         car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
                         car.tag = "AI";
-                        car.transform.rotation = Quaternion.Euler(0,0,RotationCar);
                     }
                     else
                     {
                         car.GetComponent<CarAIHandler>().enabled = false;
-                        //car.GetComponent<AStarLite>().enabled = false;
+                        car.GetComponent<AStarLite>().enabled = false;
                         car.tag = "Player";
                     }
 
