@@ -13,6 +13,7 @@ TagManager:
   - OverpassTrigger
   - UnderpassTrigger
   - SpawnPoint
+  - Circuit
   layers:
   - Default
   - TransparentFX

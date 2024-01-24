@@ -1123,6 +1123,7 @@ GameObject:
   - component: {fileID: 8814730635801217467}
   - component: {fileID: 8814730635801217468}
   - component: {fileID: 5962954879814698832}
+  - component: {fileID: -185822368209343491}
   m_Layer: 0
   m_Name: Lambo PoliceCar
   m_TagString: Untagged
@@ -1276,7 +1277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiMode: 1
   maxSpeed: 16
-  isAvoidingCars: 1
+  isAvoidingCars: 0
   skillLevel: 1
 --- !u!114 &8814730635801217468
 MonoBehaviour:
@@ -1307,6 +1308,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RightBeacon: {fileID: 88558769027932968}
   LeftBeacon: {fileID: 3143179276028025679}
+--- !u!114 &-185822368209343491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814730635801217469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebugActiveForCar: 1
 --- !u!1 &8814730635846197050
 GameObject:
   m_ObjectHideFlags: 0

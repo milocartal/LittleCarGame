@@ -15129,6 +15129,7 @@ GameObject:
   - component: {fileID: 4277276170080460868}
   - component: {fileID: 4277276170080460891}
   - component: {fileID: 4277276170080460892}
+  - component: {fileID: 4133052039657484298}
   m_Layer: 0
   m_Name: F1
   m_TagString: Untagged
@@ -15281,7 +15282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiMode: 1
   maxSpeed: 16
-  isAvoidingCars: 1
+  isAvoidingCars: 0
   skillLevel: 1
 --- !u!114 &4277276170080460892
 MonoBehaviour:
@@ -15298,6 +15299,19 @@ MonoBehaviour:
   surfaceLayer:
     serializedVersion: 2
     m_Bits: 4160
+--- !u!114 &4133052039657484298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4277276170080460893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebugActiveForCar: 1
 --- !u!1 &4277276170117019354
 GameObject:
   m_ObjectHideFlags: 0
