@@ -5,6 +5,9 @@ using System.Linq;
 
 public class SpawnCars : MonoBehaviour
 {
+    [SerializeField]
+    int RotationCar = 0;
+
     int numberOfCarsSpawned = 0;
 
     // Start is called before the first frame update
@@ -56,6 +59,7 @@ public class SpawnCars : MonoBehaviour
                         car.GetComponent<TopDownCarController>().driftFactor = 0;
                         car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
                         car.tag = "AI";
+                        car.transform.rotation = Quaternion.Euler(0,0,RotationCar);
                     }
                     else
                     {
