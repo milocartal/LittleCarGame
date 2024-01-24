@@ -694,6 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countDownText: {fileID: 8186732122582286160}
+  timeToWait: 3
 --- !u!1 &7763702251961268458
 GameObject:
   m_ObjectHideFlags: 0
