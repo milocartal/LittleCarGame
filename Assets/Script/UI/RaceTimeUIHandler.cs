@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RaceTimeUIHandler : MonoBehaviour
 {
-    Text timeText;
+    public TMP_Text timeText;
 
     float lastRaceTimeUpdate = 0;
 
-    private void Awake()
-    {
-        timeText = GetComponent<Text>();
-    }
 
     // Start is called before the first frame update
     void Start()

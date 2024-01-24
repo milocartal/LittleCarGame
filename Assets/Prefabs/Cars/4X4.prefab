@@ -1228,6 +1228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5752b921e943488eafc846551fa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carType: 0
   driftFactor: 0.9
   accelerationFactor: 25
   turnFactor: 2.5
@@ -1281,7 +1282,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7606043188464587651}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de5c6a6003fbcb34ca1d5e1602eb5370, type: 3}
   m_Name: 
