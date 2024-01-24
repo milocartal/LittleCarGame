@@ -7,6 +7,7 @@ using TMPro;
 public class CountDownUIHandler : MonoBehaviour
 {
     public TMP_Text countDownText;
+    public int timeToWait = 3;
 
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class CountDownUIHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
 
-        int counter = 3;
+        int counter = timeToWait;
 
         while (true)
         {
