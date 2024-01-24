@@ -35,8 +35,6 @@ public class PlayMenuManager : MonoBehaviour
         ChoixCarMenuContainer.SetActive(false);
     }
 
-    
-
     public void Return_to_PlayMenu ()
     {
         //CourseSimpleContainer.SetActive(false);

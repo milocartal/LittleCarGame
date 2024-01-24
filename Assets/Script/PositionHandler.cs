@@ -5,6 +5,9 @@ using System.Linq;
 
 public class PositionHandler : MonoBehaviour
 {
+
+    [SerializeField]
+    public int nbLap = 2;
     //Other components
     LeaderboardUIHandler leaderboardUIHandler;
 
@@ -25,7 +28,12 @@ public class PositionHandler : MonoBehaviour
 
         //Hook up the pased checkpoint event
         foreach (CarLapCounter lapCounters in carLapCounters)
+        {
             lapCounters.OnPassCheckpoint += OnPassCheckpoint;
+            lapCounters.SetLapsToComplete(nbLap);
+
+        }
+            
 
         //Get the leaderboard UI handler
         leaderboardUIHandler = FindObjectOfType<LeaderboardUIHandler>();

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class CarLapCounter : MonoBehaviour
 {
-    public Text carPositionText;
+    public TMP_Text carPositionText;
 
     int passedCheckPointNumber = 0;
     float timeAtLastPassedCheckPoint = 0;
@@ -14,7 +15,7 @@ public class CarLapCounter : MonoBehaviour
     int numberOfPassedCheckpoints = 0;
 
     int lapsCompleted = 0;
-    const int lapsToComplete = 2;
+    private int lapsToComplete = 2;
 
     bool isRaceCompleted = false;
 
@@ -56,6 +57,11 @@ public class CarLapCounter : MonoBehaviour
     public bool IsRaceCompleted()
     {
         return isRaceCompleted;
+    }
+
+    public void SetLapsToComplete(int laps)
+    {
+        lapsToComplete = laps;
     }
 
     IEnumerator ShowPositionCO(float delayUntilHidePosition)

@@ -8,6 +8,8 @@ using Unity.VisualScripting;
 
 public enum GameStates { countDown, running, raceOver };
 
+public enum RaceType { simple, gp, chrono, special, menu}
+
 public class GameManager : MonoBehaviour
 {
     //Static instance of GameManager so other scripts can access it
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     //States
     GameStates gameState = GameStates.countDown;
+    RaceType raceType = RaceType.menu;
 
     //Time
     float raceStartedTime = 0;
@@ -172,4 +175,9 @@ public class GameManager : MonoBehaviour
         LevelStart();
     }
 
+
+    public void SetRaceType(RaceType newRaceType)
+    {
+        raceType = newRaceType;
+    }
 }

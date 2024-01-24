@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7874227149258552187}
   - component: {fileID: 7874227149258552134}
   - component: {fileID: 3100966927362579102}
+  - component: {fileID: 5140475007531890571}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7874227149258552186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -135.79, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110,3 +111,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d196862c16f4b44db8eee4032e2625a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotationCar: 0
+--- !u!114 &5140475007531890571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7874227149258552186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af41e391f16029349b2dd124c510265d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbLap: 2
+  carLapCounters: []

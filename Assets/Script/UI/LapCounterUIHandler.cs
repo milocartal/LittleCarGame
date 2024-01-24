@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LapCounterUIHandler : MonoBehaviour
 {
-    Text lapText;
+    TMP_Text lapText;
 
     private void Awake()
     {
-        lapText = GetComponent<Text>();
+        lapText = GetComponent<TMP_Text>();
     }
 
     public void SetLapText(string text)
