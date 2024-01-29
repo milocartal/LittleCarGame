@@ -7,17 +7,19 @@ public class TutorialManager : MonoBehaviour
 
     public GameObject[] popUps;
     private int popUpIndex;
-    public BoxCollider2D jumpTrigger;
     private bool isJumped = false;
+    private bool isZoneFreinage = false;
+    private bool isZoneTerre = false;
+    private bool isEnd = false;
 
     void Start()
     {
-        
+        GameManager.instance.SetRaceType(RaceType.tuto);
     }
 
     void Update()
     {
-        for(int i = 0; i < popUps.Length; i++)
+        for (int i = 0; i < popUps.Length; i++)
         {
             if(i == popUpIndex)
             {
@@ -58,18 +60,48 @@ public class TutorialManager : MonoBehaviour
         }
         else if (popUpIndex == 4)
         {
+            if (isZoneFreinage)
+            {
+                popUpIndex++;
+            }
+        }
+        else if (popUpIndex == 5)
+        {
             if (isJumped)
+            {
+                popUpIndex++;
+            }
+        }
+        else if (popUpIndex == 6)
+        {
+            if (isZoneTerre)
+            {
+                popUpIndex++;
+            }
+        }
+        else if (popUpIndex == 7)
+        {
+            if (isEnd)
             {
                 popUpIndex++;
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void setIsJumped(bool state)
     {
-        if (collision.CompareTag("Player"))
-        {
-            isJumped = true;
-        }
+        isJumped = state;
+    }
+    public void setIsZoneFreinage(bool state)
+    {
+        isZoneFreinage = state;
+    }
+    public void setIsZoneTerre(bool state)
+    {
+        isZoneTerre = state;
+    }
+    public void setIsEnd(bool state)
+    {
+        isEnd = state;
     }
 }

@@ -316,6 +316,35 @@ public class TopDownCarController : MonoBehaviour
             //Get the jump data from the jump
             JumpData jumpData = collider2d.GetComponent<JumpData>();
             Jump(jumpData.jumpHeightScale, jumpData.jumpPushScale, carCollider.gameObject.layer);
+            if (GameManager.Instance.GetRaceType() == RaceType.tuto)
+            {
+                GameObject.FindObjectOfType<TutorialManager>().setIsJumped(true);
+            }
+        }
+        else if (collider2d.CompareTag("Terre"))
+        {
+            if (GameManager.Instance.GetRaceType() == RaceType.tuto)
+            {
+                GameManager.FindObjectOfType<TutorialManager>().setIsZoneTerre(true);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Freinage"))
+        {
+            if (GameManager.Instance.GetRaceType() == RaceType.tuto && carRigidbody2D.velocity == new Vector2 (0,0))
+            {
+                GameObject.FindObjectOfType<TutorialManager>().setIsZoneFreinage(true);
+            }
+        }
+        else if (collision.CompareTag("Terre"))
+        {
+            if (GameManager.Instance.GetRaceType() == RaceType.tuto)
+            {
+                GameObject.FindObjectOfType<TutorialManager>().setIsEnd(true);
+            }
         }
     }
 

@@ -28,4 +28,9 @@ public class TypeManager : MonoBehaviour
     {
         GameManager.instance.SetRaceType(RaceType.menu);
     }
+
+    public void SetTuto()
+    {
+        GameManager.instance.SetRaceType(RaceType.tuto);
+    }
 }
