@@ -15,6 +15,7 @@ public class test : MonoBehaviour
     public Transform spawnOnTransform;
 
     public PlayMenuManager PlayMenuM;
+    public TeleportToCircuit TeleportToCObject;
 
 
     //Other components
@@ -93,7 +94,20 @@ public class test : MonoBehaviour
 
         }
 
-        PlayMenuM.GetComponent<PlayMenuManager>().Go_To_Choix_Car_For_Course_Simple_Menu();
+        //Si on est dans le mode GP donc si bool GPisActive de PlayMenuManager is true
+
+
+        switch(GameManager.instance.GetRaceType())
+        {
+            case (RaceType.simple):
+                PlayMenuM.GetComponent<PlayMenuManager>().Go_To_Choix_Car_For_Course_Simple_Menu();
+                break;
+            case (RaceType.gp):
+                TeleportToCObject.GetComponent<TeleportToCircuit>().LoadingCircuitRandom();
+                break;
+        }
+
+       
 
         //PlayerPrefs.SetInt("P1SelectedCarID", carDatas[id].carUniqueID);
         //PlayerPrefs.Save();
