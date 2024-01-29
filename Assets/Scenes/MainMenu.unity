@@ -13721,6 +13721,7 @@ GameObject:
   - component: {fileID: 827851578}
   - component: {fileID: 827851579}
   - component: {fileID: 827851580}
+  - component: {fileID: 827851581}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13853,6 +13854,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19deee8a15884e449b9c344541a92115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &827851581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827851573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b51ad3f119185a4791bb573bddf7154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &851322574
@@ -34620,6 +34633,7 @@ MonoBehaviour:
   carPrefab: {fileID: 7053301906912171386, guid: b1a3e057bb9a23a40a0d91dfe37c00fc, type: 3}
   spawnOnTransform: {fileID: 1225966900}
   PlayMenuM: {fileID: 827851579}
+  TeleportToCObject: {fileID: 827851581}
 --- !u!1001 &1293502948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34797,16 +34811,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 257848417}
     m_Modifications:
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 827851580}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 827851579}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetGP
       objectReference: {fileID: 0}
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GoToChoixCarMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: TypeManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3272111762311243844, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_Pivot.x

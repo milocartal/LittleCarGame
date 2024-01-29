@@ -180,4 +180,9 @@ public class GameManager : MonoBehaviour
     {
         raceType = newRaceType;
     }
+
+    public RaceType GetRaceType()
+    {
+        return raceType;
+    }
 }
