@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 
 public enum GameStates { countDown, running, raceOver };
 
-public enum RaceType { simple, gp, chrono, special, menu}
+public enum RaceType { simple, gp, chrono, special, menu, tuto };
 
 public class GameManager : MonoBehaviour
 {

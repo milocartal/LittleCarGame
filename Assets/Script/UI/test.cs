@@ -33,30 +33,20 @@ public class test : MonoBehaviour
 
     //Pour la boucle de création
     private GameObject TempCar;
-    private Vector3 VectTempCar;
 
     // Start is called before the first frame update
     void Start()
     {
-        //PlayMenuManager PlayMenuM = null;
-
-        //PlayMenuM = FindObjectOfType<PlayMenuManager>();
-
         carDatas = Resources.LoadAll<CarData>("CarData/");
-        VectTempCar = spawnOnTransform.position;
-        VectTempCar.x -= 180;
-        VectTempCar.y += 143;
-        //Load the car data
-        //Instantiate(carPrefab);
 
         //On va crée des boutons
         for (int i = 0; i < carDatas.Length; i++)
         {
             int tempId = carDatas[i].carUniqueID;
-            TempCar = Instantiate(carPrefab, VectTempCar, spawnOnTransform.rotation ,spawnOnTransform);
+            TempCar = Instantiate(carPrefab, spawnOnTransform.position, spawnOnTransform.rotation ,spawnOnTransform);
             carUIHandler = TempCar.GetComponent<CarUIHandler>();
             carUIHandler.SetupCar(carDatas[i]);
-            VectTempCar.x += 200;
+            
             
             Button tempBtn = TempCar.GetComponent<Button>();
             tempBtn.onClick.AddListener(() => { OnSelectCar(tempId); });
