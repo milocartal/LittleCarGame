@@ -35,9 +35,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void Options_Sections ()
     {
-        Debug.Log("Options Menu");
-        //MainMenuContainer.SetActive(false);
-        //OptionsMenuContainer.SetActive(true);
+        //Debug.Log("Options Menu");
+        MainMenuContainer.SetActive(false);
+        OptionsMenuContainer.SetActive(true);
     }
 
     public void Quit_Section ()

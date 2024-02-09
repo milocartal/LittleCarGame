@@ -40,6 +40,40 @@ public class ColorBlindFilter : MonoBehaviour
         { new Color(.618f, .32f, .062f), new Color(.163f, .775f, .062f), new Color(.163f, .320f, .516f)  }    // Achromatomaly
     };
 
+    private void Start()
+    {
+        switch (PlayerPrefs.GetInt("ColorBlindMode"))
+        {
+            case 1:
+                mode = ColorBlindMode.Protanopia;
+                break;
+            case 2:
+                mode = ColorBlindMode.Protanomaly;
+                break;
+            case 3:
+                mode = ColorBlindMode.Deuteranopia;
+                break;
+            case 4:
+                mode = ColorBlindMode.Deuteranomaly;
+                break;
+            case 5:
+                mode = ColorBlindMode.Tritanopia;
+                break;
+            case 6:
+                mode = ColorBlindMode.Tritanomaly;
+                break;
+            case 7:
+                mode = ColorBlindMode.Achromatopsia;
+                break;
+            case 8:
+                mode = ColorBlindMode.Achromatomaly;
+                break;
+            default:
+                mode = ColorBlindMode.Normal;
+                break;
+        }
+    }
+
     void Awake()
     {
         material = new Material(Shader.Find("Hidden/ChannelMixer"));
@@ -68,5 +102,49 @@ public class ColorBlindFilter : MonoBehaviour
 
         // Apply effect
         Graphics.Blit(source, destination, material, showDifference ? 1 : 0);
+    }
+
+    public void SelectColorBlindMode(int ColorMode)
+    {
+        PlayerPrefs.SetInt("ColorBlindMode", ColorMode);
+        switch (ColorMode)
+        {
+            case 1:
+                previousMode = mode;
+                mode = ColorBlindMode.Protanopia;
+                break;
+            case 2:
+                previousMode = mode;
+                mode = ColorBlindMode.Protanomaly;
+                break;
+            case 3:
+                previousMode = mode;
+                mode = ColorBlindMode.Deuteranopia;
+                break;
+            case 4:
+                previousMode = mode;
+                mode = ColorBlindMode.Deuteranomaly;
+                break;
+            case 5:
+                previousMode = mode;
+                mode = ColorBlindMode.Tritanopia;
+                break;
+            case 6:
+                previousMode = mode;
+                mode = ColorBlindMode.Tritanomaly;
+                break;
+            case 7:
+                previousMode = mode;
+                mode = ColorBlindMode.Achromatopsia;
+                break;
+            case 8:
+                previousMode = mode;
+                mode = ColorBlindMode.Achromatomaly;
+                break;
+            default:
+                previousMode = mode;
+                mode = ColorBlindMode.Normal;
+                break;
+        }
     }
 }
