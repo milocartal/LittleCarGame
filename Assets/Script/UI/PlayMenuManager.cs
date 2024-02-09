@@ -9,6 +9,7 @@ public class PlayMenuManager : MonoBehaviour
     public GameObject PlayMenuMainContainer;
     public GameObject CourseSimpleContainer;
     public GameObject ChoixCarMenuContainer;
+    public GameObject MissionMenuContainer;
 
 
 
@@ -38,6 +39,13 @@ public class PlayMenuManager : MonoBehaviour
     }
 
 
+    public void GoToMissionMenu()
+    {
+        PlayMenuMainContainer.SetActive(false);
+        MissionMenuContainer.SetActive(true);
+    }
+
+
 
 
 
@@ -60,6 +68,12 @@ public class PlayMenuManager : MonoBehaviour
             ChoixCarMenuContainer.SetActive(true);
             CourseSimpleContainer.SetActive(false);
             //PlayMenuMainContainer.SetActive(false);
+        }
+
+        if (MissionMenuContainer.activeSelf == true)
+        {
+            PlayMenuMainContainer.SetActive(true);
+            MissionMenuContainer.SetActive(false);
         }
     }
 }
