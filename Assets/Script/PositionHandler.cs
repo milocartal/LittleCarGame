@@ -29,9 +29,8 @@ public class PositionHandler : MonoBehaviour
         //Hook up the pased checkpoint event
         foreach (CarLapCounter lapCounters in carLapCounters)
         {
-            lapCounters.OnPassCheckpoint += OnPassCheckpoint;
             lapCounters.SetLapsToComplete(nbLap);
-
+            lapCounters.OnPassCheckpoint += OnPassCheckpoint;
         }
             
 

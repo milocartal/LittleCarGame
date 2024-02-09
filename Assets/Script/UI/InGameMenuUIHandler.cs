@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,27 @@ public class InGameMenuUIHandler : MonoBehaviour
         GameManager.instance.OnGameStateChanged += OnGameStateChanged;
     }
    
+    public void OnNextRace()
+    {
+        switch(GameManager.instance.GetRaceType())
+        {
+            case RaceType.gp:
+                Debug.Log("GP");
+                break;
+
+            case RaceType.simple:
+                Debug.Log("simple");
+                break;
+
+            case RaceType.chrono:
+                break;
+
+
+            default:
+                Debug.LogError("No correct race type");
+                break;
+        }
+    }
 
     public void OnRaceAgain()
     {
@@ -27,6 +49,11 @@ public class InGameMenuUIHandler : MonoBehaviour
     public void OnExitToMainMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void OnQuit()
+    {
+        Application.Quit();
     }
 
     IEnumerator ShowMenuCO()
