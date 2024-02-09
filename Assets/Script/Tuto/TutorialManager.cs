@@ -12,9 +12,13 @@ public class TutorialManager : MonoBehaviour
     private bool isZoneTerre = false;
     private bool isEnd = false;
 
+    //Pour savoir si le jeu vous téléporte dans la scène du tuto ou non
+
     void Start()
     {
         GameManager.instance.SetRaceType(RaceType.tuto);
+
+        PlayerPrefs.SetInt("TutorialLaunched", 1);
     }
 
     void Update()
