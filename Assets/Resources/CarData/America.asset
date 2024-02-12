@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd78d901656ad04780a27892ace867d, type: 3}
   m_Name: America
   m_EditorClassIdentifier: 
-  carUniqueID: 2
+  carUniqueID: 3
   carName: America
   carUISprite: {fileID: 139804161, guid: 020d983659245af40b65fe4ee9a63425, type: 3}
   carPrefab: {fileID: 7606043188464587651, guid: 9dd86d42248b50e4780573ce8da85d02, type: 3}

@@ -17,6 +17,11 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
         if (Object.HasInputAuthority)
         {
             Local = this;
+            Debug.Log("Spawned own car");
+        }
+        else
+        {
+            Debug.Log("Spawned other player car");
         }
     }
 

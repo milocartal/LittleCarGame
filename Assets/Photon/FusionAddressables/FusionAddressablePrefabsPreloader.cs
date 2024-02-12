@@ -1,14 +1,14 @@
-﻿namespace Fusion {
-  using System.Collections.Generic;
-  using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine;
 
-#if FUSION_ENABLE_ADDRESSABLES && !FUSION_DISABLE_ADDRESSABLES
-  using UnityEngine.AddressableAssets;
-  using UnityEngine.ResourceManagement.AsyncOperations;
+#if FUSION_USE_ADDRESSABLES
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 #endif
 
+namespace Fusion {
   public class FusionAddressablePrefabsPreloader : MonoBehaviour {
-#if FUSION_ENABLE_ADDRESSABLES && !FUSION_DISABLE_ADDRESSABLES
+#if FUSION_USE_ADDRESSABLES
     private List<AsyncOperationHandle<GameObject>> _handles = new List<AsyncOperationHandle<GameObject>>();
 
     private async System.Threading.Tasks.Task Start() {
@@ -20,7 +20,7 @@
       // what it does internally, i.e. load with the very same parameters
 
       foreach (var (id, source) in config.PrefabTable.GetEntries()) {
-        if (source is NetworkPrefabSourceAddressable addressable) {
+        if (source is NetworkPrefabSourceUnityAddressable addressable) {
           // we can't just LoadAssetAsync() because source does it, too:
           // https://forum.unity.com/threads/1-15-1-assetreference-not-allow-loadassetasync-twice.959910/
           var key = addressable.Address.RuntimeKey;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd78d901656ad04780a27892ace867d, type: 3}
   m_Name: 0_Porsche
   m_EditorClassIdentifier: 
-  carUniqueID: 0
+  carUniqueID: 4
   carName: 'Blue Porsche '
   carUISprite: {fileID: -585825128, guid: 020d983659245af40b65fe4ee9a63425, type: 3}
   carPrefab: {fileID: 8717257106001987611, guid: b4b017073ea9b0e4ab3888d4e92c4396, type: 3}

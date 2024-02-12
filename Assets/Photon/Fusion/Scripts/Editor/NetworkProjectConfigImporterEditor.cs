@@ -22,54 +22,26 @@ namespace Fusion.Editor {
 
     public override void OnInspectorGUI() {
 
-      bool rebuildPrefabTable = false;
-      
       try {
         if (_initializeException != null) {
           EditorGUILayout.HelpBox(_initializeException.ToString(), MessageType.Error, true);
         } else {
 
-          FusionEditorGUI.InjectScriptHeaderDrawer(extraDataSerializedObject);
+          FusionEditorGUI.InjectPropertyDrawers(extraDataSerializedObject);
           FusionEditorGUI.ScriptPropertyField(extraDataSerializedObject);
 
-          VersionInfoGUI();
+          VersionInfoGUI(); 
 
           using (new EditorGUI.DisabledScope(HasModified())) {
-            rebuildPrefabTable = GUILayout.Button("Rebuild Prefab Table");
-          }
-
-          extraDataSerializedObject.Update();
-          EditorGUILayout.PropertyField(extraDataSerializedObject.FindPropertyOrThrow(nameof(NetworkProjectConfigAsset.Config)));
-          extraDataSerializedObject.ApplyModifiedProperties();
-
-          EditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(NetworkProjectConfigImporter.PrefabOptions)));
-          
-          EditorGUILayout.Space();
-
-          EditorGUILayout.Space();
-          EditorGUILayout.LabelField("Auto-Generated", EditorStyles.boldLabel);
-
-          if (GUILayout.Button("Show Network Prefabs Inspector")) {
-            NetworkPrefabsInspector.ShowWindow();
-          }
-          
-          // WORKAROUND: during initial failed imports, this may be an instance of UnityEngine.DefaultAsset instead of the actual asset
-          if (assetSerializedObject?.targetObject.GetType() == typeof(NetworkProjectConfigAsset)) {
-            // this has the tendency to overwrite the global enabled flag, so let's make sure it's reset once the scope exists
-            using (new FusionEditorGUI.EnabledScope(GUI.enabled)) {
-              EditorGUILayout.PropertyField(assetSerializedObject.FindPropertyOrThrow(nameof(NetworkProjectConfigAsset.Prefabs)));
-              EditorGUILayout.PropertyField(assetSerializedObject.FindPropertyOrThrow(nameof(NetworkProjectConfigAsset.BehaviourMeta)));
+            if (GUILayout.Button("Rebuild Prefab Table")) {
+              NetworkProjectConfigUtilities.RebuildPrefabTable();
             }
-          } else {
-            EditorGUILayout.HelpBox("Asset failed to deserialize correctly. Please reimport.", MessageType.Warning);
           }
+
+          FusionEditorGUI.DrawDefaultInspector(extraDataSerializedObject, drawScript: false);
         }
       } finally {
         ApplyRevertGUI();
-      }
-      
-      if (rebuildPrefabTable) {
-        NetworkProjectConfigUtilities.RebuildPrefabTable();
       }
     }
 
@@ -101,12 +73,13 @@ namespace Fusion.Editor {
 
     protected override void Apply() {
       base.Apply();
-
+      
       if (targets != null) {
         for (int i = 0; i < extraDataTargets.Length; ++i) {
           var importer = GetImporter(i);
           var wrapper = GetConfigWrapper(i);
-          
+
+          importer.PrefabAssetsContainerPath = wrapper.PrefabAssetsContainerPath;
           EditorUtility.SetDirty(importer);
 
           var json = EditorJsonUtility.ToJson(wrapper.Config, true);
@@ -119,8 +92,11 @@ namespace Fusion.Editor {
       try {
         var importer = GetImporter(targetIndex);
         var extra = (NetworkProjectConfigAsset)extraData;
-
         extra.Config = NetworkProjectConfigImporter.LoadConfigFromFile(importer.assetPath);
+        extra.PrefabAssetsContainerPath = importer.PrefabAssetsContainerPath;
+        extra.Prefabs = AssetDatabase.LoadAllAssetsAtPath(importer.assetPath)
+          .OfType<NetworkPrefabSourceUnityBase>()
+          .ToArray();
 
         _initializeException = null;
       } catch (Exception ex) {

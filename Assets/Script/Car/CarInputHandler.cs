@@ -71,4 +71,11 @@ public class CarInputHandler : MonoBehaviour
     {
         inputVector = newInput;
     }
+
+    public NetworkInputData GetNetworkInput()
+    {
+        NetworkInputData networkInputData = new NetworkInputData();
+        networkInputData.direction = inputVector;
+        return networkInputData;
+    }
 }

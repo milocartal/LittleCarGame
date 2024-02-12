@@ -24,7 +24,7 @@ public class NetworkRunnerHandler : MonoBehaviour
 
     protected virtual Task InitializeNetworkRunner(NetworkRunner runner, GameMode gameMode, NetAddress address, SceneRef scene, Action<NetworkRunner> initialized)
     {
-        var sceneObjectProvider = runner.GetComponents(typeof(MonoBehaviour)).OfType<INetworkSceneObjectProvider>().FirstOrDefault();
+        var sceneObjectProvider = runner.GetComponents(typeof(MonoBehaviour)).OfType<INetworkSceneManager>().FirstOrDefault();
 
         if (sceneObjectProvider == null)
         {
@@ -40,7 +40,7 @@ public class NetworkRunnerHandler : MonoBehaviour
             Scene = scene,
             SessionName = "RaceRoom",
             Initialized = initialized,
-            SceneObjectProvider = sceneObjectProvider
+            SceneManager = sceneObjectProvider
         }
         );
     }

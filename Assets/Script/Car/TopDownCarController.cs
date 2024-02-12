@@ -1,8 +1,9 @@
+using Fusion;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownCarController : MonoBehaviour
+public class TopDownCarController : NetworkBehaviour
 {
     public enum TypeCar { Sport, Poids_Lourd, Tout_Terrain, Moto, Special };
 
@@ -56,10 +57,16 @@ public class TopDownCarController : MonoBehaviour
     }
 
     //Frame-rate independent for physics calculations.
-    void FixedUpdate()
+    public override void FixedUpdateNetwork()
     {
         if (GameManager.instance.GetGameState() == GameStates.countDown)
           return;
+
+        if (GetInput(out NetworkInputData data))
+        {
+            steeringInput = data.direction.x;
+            accelerationInput = data.direction.y;
+        }
 
         ApplyEngineForce();
 
