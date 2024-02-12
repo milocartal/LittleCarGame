@@ -17,7 +17,7 @@ public enum ColorBlindMode
     //On garde Deuteranopia 4 / Protanopia 1 / tritanpia 6 
 }
 
-[ExecuteInEditMode]
+[ExecuteAlways]
 public class ColorBlindFilter : MonoBehaviour
 {
     public ColorBlindMode mode = ColorBlindMode.Normal;
