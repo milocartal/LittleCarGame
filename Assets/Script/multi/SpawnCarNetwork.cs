@@ -4,7 +4,6 @@ using UnityEngine;
 using Fusion;
 using Fusion.Sockets;
 using System;
-using Unity.VisualScripting;
 
 public class SpawnCarNetwork : MonoBehaviour, INetworkRunnerCallbacks
 {
