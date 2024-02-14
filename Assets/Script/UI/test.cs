@@ -85,8 +85,6 @@ public class test : MonoBehaviour
         }
 
         //Si on est dans le mode GP donc si bool GPisActive de PlayMenuManager is true
-
-
         switch(GameManager.instance.GetRaceType())
         {
             case (RaceType.simple):
@@ -95,6 +93,12 @@ public class test : MonoBehaviour
             case (RaceType.gp):
                 TeleportToCObject.GetComponent<TeleportToCircuit>().LoadingCircuitRandom();
                 break;
+            //A MODIFIER
+            case (RaceType.chrono):
+                PlayMenuM.GetComponent<PlayMenuManager>().Go_To_Choix_Car_For_Course_Simple_Menu();
+                break;
+
+
         }
 
        
