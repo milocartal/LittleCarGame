@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     string currentSceneName;
-    //Récupérer la scène 
+    //Récupérer la scène
+    [SerializeField] private GameObject _continuer;
+    [SerializeField] private GameObject _recommencer;
+    [SerializeField] private GameObject _menu;
+    [SerializeField] private GameObject _quitter;
 
     void Start ()
     {
@@ -21,7 +26,7 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
         //Si on appuie sur Echap
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (InputManager.instance.MenuOpenCloseInput)
         {
             if (GameIsPaused)
             {
@@ -39,6 +44,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1.0f;
         GameIsPaused = false;
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     //Si on est en pause
@@ -48,6 +54,7 @@ public class PauseMenu : MonoBehaviour
         //timeScale zéro : time freeze
         Time.timeScale = 0f;
         GameIsPaused = true;
+        EventSystem.current.SetSelectedGameObject(_continuer);
     }
 
     public void Continuer ()
