@@ -15,7 +15,7 @@ public class CarLapCounter : MonoBehaviour
     int numberOfPassedCheckpoints = 0;
 
     int lapsCompleted = 0;
-    private int lapsToComplete = 2;
+    int lapsToComplete = 2;
 
     bool isRaceCompleted = false;
 
@@ -38,6 +38,7 @@ public class CarLapCounter : MonoBehaviour
             lapCounterUIHandler = FindObjectOfType<LapCounterUIHandler>();
             lapCounterUIHandler.SetLapText($"LAP {lapsCompleted + 1}/{lapsToComplete}");
         }
+        Debug.Log("Lap to Complete "+lapsToComplete);
     }
 
     public void SetCarPosition(int position)
