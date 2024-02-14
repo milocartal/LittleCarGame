@@ -7,13 +7,11 @@ using UnityEngine.SceneManagement;
 public class InGameMenuUIHandler : MonoBehaviour
 {
     //Other components
-    Canvas canvas;
+    public GameObject canvas;
 
     private void Awake()
     {
-        canvas = GetComponent<Canvas>();
-
-        canvas.enabled = false;
+        canvas.SetActive(false);
 
         //Hook up events
         GameManager.instance.OnGameStateChanged += OnGameStateChanged;
@@ -48,7 +46,7 @@ public class InGameMenuUIHandler : MonoBehaviour
 
     public void OnExitToMainMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void OnQuit()
@@ -60,7 +58,7 @@ public class InGameMenuUIHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        canvas.enabled = true;
+        canvas.SetActive(true);
     }
 
     //Events 
