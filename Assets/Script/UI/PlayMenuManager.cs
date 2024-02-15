@@ -18,6 +18,7 @@ public class PlayMenuManager : MonoBehaviour
     [SerializeField] private GameObject _tuto;
     [SerializeField] private GameObject _retour;
     [SerializeField] private GameObject _retourChoixCar;
+    [SerializeField] private GameObject _circuit1;
 
 
 
@@ -32,7 +33,7 @@ public class PlayMenuManager : MonoBehaviour
     {
         if (InputManager.Instance.MenuOpenCloseInput)
         {
-            if (ChoixCarMenuContainer.activeSelf == true)
+            if (ChoixCarMenuContainer.activeSelf == true || CourseSimpleContainer.activeSelf == true)
             {
                 Return_to_PlayMenu();
             }
@@ -43,7 +44,7 @@ public class PlayMenuManager : MonoBehaviour
     {
         PlayMenuMainContainer.SetActive(false);
         ChoixCarMenuContainer.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(_retourChoixCar);
+        //EventSystem.current.SetSelectedGameObject();
     }
 
     public void Go_To_Choix_Car_For_Course_Simple_Menu()
@@ -51,6 +52,7 @@ public class PlayMenuManager : MonoBehaviour
         CourseSimpleContainer.SetActive(true);
         //PlayMenuMainContainer.SetActive(false);
         ChoixCarMenuContainer.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(_circuit1);
     }
 
     public void Return_to_PlayMenu ()
@@ -63,7 +65,8 @@ public class PlayMenuManager : MonoBehaviour
         {
             ChoixCarMenuContainer.SetActive(false);
             PlayMenuMainContainer.SetActive(true);
-            
+            EventSystem.current.SetSelectedGameObject(_grandPrix);
+
         }
         //Si on était dans le Menu Course et qu'on retourne en arrière
         if (CourseSimpleContainer.activeSelf == true)
@@ -71,7 +74,7 @@ public class PlayMenuManager : MonoBehaviour
             ChoixCarMenuContainer.SetActive(true);
             CourseSimpleContainer.SetActive(false);
             //PlayMenuMainContainer.SetActive(false);
+            //EventSystem.current.SetSelectedGameObject();
         }
-        EventSystem.current.SetSelectedGameObject(_grandPrix);
     }
 }
