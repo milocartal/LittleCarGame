@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 public class PlayMenuManager : MonoBehaviour
@@ -9,6 +10,14 @@ public class PlayMenuManager : MonoBehaviour
     public GameObject PlayMenuMainContainer;
     public GameObject CourseSimpleContainer;
     public GameObject ChoixCarMenuContainer;
+
+    [SerializeField] private GameObject _grandPrix;
+    [SerializeField] private GameObject _courseSimple;
+    [SerializeField] private GameObject _chrono;
+    [SerializeField] private GameObject _challenge;
+    [SerializeField] private GameObject _tuto;
+    [SerializeField] private GameObject _retour;
+    [SerializeField] private GameObject _retourChoixCar;
 
 
 
@@ -21,13 +30,20 @@ public class PlayMenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (InputManager.Instance.MenuOpenCloseInput)
+        {
+            if (ChoixCarMenuContainer.activeSelf == true)
+            {
+                Return_to_PlayMenu();
+            }
+        }
     }
 
     public void GoToChoixCarMenu()
     {
         PlayMenuMainContainer.SetActive(false);
         ChoixCarMenuContainer.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(_retourChoixCar);
     }
 
     public void Go_To_Choix_Car_For_Course_Simple_Menu()
@@ -36,11 +52,6 @@ public class PlayMenuManager : MonoBehaviour
         //PlayMenuMainContainer.SetActive(false);
         ChoixCarMenuContainer.SetActive(false);
     }
-
-
-
-
-
 
     public void Return_to_PlayMenu ()
     {
@@ -61,5 +72,6 @@ public class PlayMenuManager : MonoBehaviour
             CourseSimpleContainer.SetActive(false);
             //PlayMenuMainContainer.SetActive(false);
         }
+        EventSystem.current.SetSelectedGameObject(_grandPrix);
     }
 }
