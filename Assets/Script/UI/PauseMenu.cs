@@ -18,7 +18,6 @@ public class PauseMenu : MonoBehaviour
     void Start ()
     {
         currentSceneName = SceneManager.GetActiveScene().name;
-
     }
 
 
