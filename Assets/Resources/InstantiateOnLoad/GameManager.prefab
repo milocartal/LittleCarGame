@@ -44,3 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b021faad236880740a34c5f3762b08a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Circuits:
+  - Circuit 01
+  - Circuit 02
+  - Circuit 03
+  - Circuit 04
+  - Circuit 05
+  - Circuit 06
+  - Circuit 07
+  - Circuit 08

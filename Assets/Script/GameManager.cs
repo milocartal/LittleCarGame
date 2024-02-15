@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //Mode Grand Prix
+    private List<string> Circuits = new List<string>(8);
+    private int numberOfRace = 0;
 
     //States
     GameStates gameState = GameStates.countDown;
@@ -69,6 +72,15 @@ public class GameManager : MonoBehaviour
     {
         //Supply dummy driver information for testing purposes
         driverInfoList.Add(new DriverInfo(1, "P1", 0, false));
+
+        Circuits.Add("Circuit 01");
+        Circuits.Add("Circuit 02");
+        Circuits.Add("Circuit 03");
+        Circuits.Add("Circuit 04");
+        Circuits.Add("Circuit 05");
+        Circuits.Add("Circuit 06");
+        Circuits.Add("Circuit 07");
+        Circuits.Add("Circuit 08");
     }
 
     void LevelStart()
@@ -162,6 +174,11 @@ public class GameManager : MonoBehaviour
         raceCompletedTime = Time.time;
 
         ChangeGameState(GameStates.raceOver);
+
+        if(raceType == RaceType.gp)
+        {
+            numberOfRace += 1;
+        }
     }
 
 
@@ -184,5 +201,28 @@ public class GameManager : MonoBehaviour
     public RaceType GetRaceType()
     {
         return raceType;
+    }
+
+    public void SetDefaultCircuit(string[] circuitList)
+    {
+        Circuits.Clear();
+        Circuits.Add("Circuit 01");
+        Circuits.Add("Circuit 02");
+        Circuits.Add("Circuit 03");
+        Circuits.Add("Circuit 04");
+        Circuits.Add("Circuit 05");
+        Circuits.Add("Circuit 06");
+        Circuits.Add("Circuit 07");
+        Circuits.Add("Circuit 08");
+    }
+
+    public void RemoveCircuit(string circuit)
+    {
+        Circuits.Remove(circuit);
+    }
+
+    public List<string> GetCircuitList()
+    {
+        return Circuits;
     }
 }

@@ -5,17 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TeleportToCircuit : MonoBehaviour
 {
-
-    int NumberOfRace;
-    //int randomNumber;
-    string RandomNumber;
+    List<string> Circuits;
 
     public void Start()
     {
         int NumberOfRace = SceneManager.sceneCountInBuildSettings;
-        //int randomNumber = Random.Range(1, 8);
+        Circuits = GameManager.Instance.GetCircuitList();
 
-
+   
     }
 
     public void GoToCircuit_X(string DestinationCircuit)
@@ -23,28 +20,15 @@ public class TeleportToCircuit : MonoBehaviour
         SceneManager.LoadScene(DestinationCircuit);
     }
 
-    
 
     //POUR LE GP
-    //Va générer un nombre aléatoire
+    //Prend un circuit aléatoire dans la liste des Circuits et revoie dessus
     public void LoadingCircuitRandom()
     {
-        //string TargetGRNFR = GenerateRandomNumberForRace();
-        //Si le nombre aléatoire tire vers un circuit qui n'existe pas
-
-        //SceneManager.LoadScene(3);
-        Debug.Log(RandomNumber = GenerateRandomNumberForRace());
-        //GenerateRandomNumberForRace();
-        SceneManager.LoadScene(RandomNumber);
+        int randomNumber = Random.Range(0, 7);
+        string selectCircuit = Circuits[randomNumber];
+        GameManager.instance.RemoveCircuit(selectCircuit);
+        SceneManager.LoadScene(selectCircuit);
     }
-
-    
-    public string GenerateRandomNumberForRace()
-    {
-        int randomNumber = Random.Range(1, 8);
-        string TargetRace = "Circuit 0" + randomNumber;
-        return TargetRace;
-    }
-    
 
 }

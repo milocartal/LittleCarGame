@@ -9,6 +9,11 @@ public class InGameMenuUIHandler : MonoBehaviour
     //Other components
     public GameObject canvas;
 
+    public GameObject GPEndMenu;
+    public GameObject ChronoEndMenu;
+    public GameObject MissionEndMenu;
+    public GameObject SimpleEndMenu;
+
     private void Awake()
     {
         canvas.SetActive(false);
@@ -22,7 +27,7 @@ public class InGameMenuUIHandler : MonoBehaviour
         switch(GameManager.instance.GetRaceType())
         {
             case RaceType.gp:
-                Debug.Log("GP");
+                FindObjectOfType<TeleportToCircuit>().LoadingCircuitRandom();
                 break;
 
             case RaceType.simple:
