@@ -210,6 +210,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5518393558205790371, guid: 8d608051226ccbc40bbd3926f8f267b8, type: 3}
   m_PrefabInstance: {fileID: 611663696}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &107073934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+  m_PrefabInstance: {fileID: 398961109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114667914
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +953,18 @@ PrefabInstance:
       value: Bouton_Circuit (8)
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1117,6 +1134,18 @@ PrefabInstance:
     - target: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_Name
       value: Bouton_Circuit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.9349693
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2084,6 +2113,18 @@ PrefabInstance:
     - target: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_Name
       value: Bouton_Circuit (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -15325,6 +15366,8 @@ MonoBehaviour:
   _tuto: {fileID: 1013358441}
   _retour: {fileID: 1850678373}
   _retourChoixCar: {fileID: 151803607}
+  _circuit1: {fileID: 107073934}
+  _selectCarHandler: {fileID: 827851582}
 --- !u!114 &827851580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15743,16 +15786,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1305206966}
     m_Modifications:
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 1
+      value: 0.9493828
       objectReference: {fileID: 0}
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.9585333
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3272111762311243843, guid: 2a88f46fa0b85284b93c49cb4cc5bc21, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -16194,6 +16241,18 @@ PrefabInstance:
     - target: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_Name
       value: Bouton_Circuit (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -38158,6 +38217,18 @@ PrefabInstance:
       value: Bouton_Circuit (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -38301,6 +38372,18 @@ PrefabInstance:
     - target: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_Name
       value: Bouton_Circuit (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -38779,6 +38862,18 @@ PrefabInstance:
     - target: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_Name
       value: Bouton_Circuit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -39859,6 +39954,18 @@ PrefabInstance:
     - target: {fileID: 6404046609602514182, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_Name
       value: Bouton_Circuit (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9493828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6764124308834320174, guid: 544cc7e05b0ba1c4dabb32f40cec4fde, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
