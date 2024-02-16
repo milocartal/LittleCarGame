@@ -14,20 +14,39 @@ public class InGameMenuUIHandler : MonoBehaviour
     public GameObject MissionEndMenu;
     public GameObject SimpleEndMenu;
 
+    private TeleportToCircuit teleportToCircuit;
+
     private void Awake()
     {
         canvas.SetActive(false);
+        GPEndMenu.SetActive(false);
+        ChronoEndMenu.SetActive(false);
+        MissionEndMenu.SetActive(false);
+        SimpleEndMenu.SetActive(false);
 
         //Hook up events
         GameManager.instance.OnGameStateChanged += OnGameStateChanged;
     }
-   
+
+    private void Start()
+    {
+        teleportToCircuit = FindObjectOfType<TeleportToCircuit>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (!teleportToCircuit)
+        {
+            teleportToCircuit = FindObjectOfType<TeleportToCircuit>();
+        }
+    }
+
     public void OnNextRace()
     {
         switch(GameManager.instance.GetRaceType())
         {
             case RaceType.gp:
-                FindObjectOfType<TeleportToCircuit>().LoadingCircuitRandom();
+                teleportToCircuit.LoadingCircuitRandom();
                 break;
 
             case RaceType.simple:
@@ -63,7 +82,25 @@ public class InGameMenuUIHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        canvas.SetActive(true);
+        switch (GameManager.instance.GetRaceType())
+        {
+            case RaceType.gp:
+                canvas.SetActive(true);
+                break;
+            case RaceType.simple:
+                SimpleEndMenu.SetActive(true);
+                break;
+            case RaceType.chrono:
+                ChronoEndMenu.SetActive(true);
+                break;
+            case RaceType.special:
+                MissionEndMenu.SetActive(true);
+                break;
+            default:
+                Debug.Log("default");
+                SimpleEndMenu.SetActive(true);
+                break;
+        }
     }
 
     //Events 

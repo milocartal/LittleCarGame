@@ -20,6 +20,11 @@ public class PositionHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GameManager.instance.GetRaceType() == RaceType.chrono)
+        {
+            nbLap = 1;
+        }
+
         //Get all Car lap counters in the scene. 
         CarLapCounter[] carLapCounterArray = FindObjectsOfType<CarLapCounter>();
 
