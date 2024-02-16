@@ -18,21 +18,12 @@ public class SelectCarHandler : MonoBehaviour
     public TeleportToCircuit TeleportToCObject;
 
 
-    //Other components
     CarUIHandler carUIHandler = null;
 
-
-    //Array de carDatas
     CarData[] carDatas;
 
-
-
-
-    //Index de la voiture
     int selectedCarIndex = 1;
-    //public int selectedCarIndexPublic = 1;
 
-    //Pour la boucle de création
     private GameObject TempCar;
 
     // Start is called before the first frame update
@@ -48,14 +39,11 @@ public class SelectCarHandler : MonoBehaviour
             carUIHandler = TempCar.GetComponent<CarUIHandler>();
             carUIHandler.SetupCar(carDatas[i]);
             
-            
             Button tempBtn = TempCar.GetComponent<Button>();
             tempBtn.onClick.AddListener(() => { OnSelectCar(tempId); });
         }
 
     }
-
-
 
     public void OnSelectCar(int id)
     {
@@ -73,31 +61,32 @@ public class SelectCarHandler : MonoBehaviour
         List<string> uniqueNames = names.ToList<string>();
 
         //Add AI drivers
-        for (int i = 2; i < 5; i++)
+        if (GameManager.instance.GetRaceType() != RaceType.chrono)
         {
-            string driverName = uniqueNames[Random.Range(0, uniqueNames.Count)];
-            uniqueNames.Remove(driverName);
+            for (int i = 2; i < 5; i++)
+            {
+                string driverName = uniqueNames[Random.Range(0, uniqueNames.Count)];
+                uniqueNames.Remove(driverName);
 
-            CarData carData = uniqueCars[Random.Range(0, uniqueCars.Count)];
+                CarData carData = uniqueCars[Random.Range(0, uniqueCars.Count)];
 
-            GameManager.instance.AddDriverToList(i, driverName, carData.CarUniqueID, true);
+                GameManager.instance.AddDriverToList(i, driverName, carData.CarUniqueID, true);
 
+            }
         }
-
-        //Si on est dans le mode GP donc si bool GPisActive de PlayMenuManager is true
-
 
         switch(GameManager.instance.GetRaceType())
         {
             case (RaceType.simple):
-                PlayMenuM.GetComponent<PlayMenuManager>().Go_To_Choix_Car_For_Course_Simple_Menu();
+                PlayMenuM.GetComponent<PlayMenuManager>().GoToTrackMenu();
+                break;
+            case (RaceType.chrono):
+                PlayMenuM.GetComponent<PlayMenuManager>().GoToTrackMenu();
                 break;
             case (RaceType.gp):
                 TeleportToCObject.GetComponent<TeleportToCircuit>().LoadingCircuitRandom();
                 break;
         }
-
-       
 
         //PlayerPrefs.SetInt("P1SelectedCarID", carDatas[id].carUniqueID);
         //PlayerPrefs.Save();
