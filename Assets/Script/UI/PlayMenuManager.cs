@@ -40,14 +40,14 @@ public class PlayMenuManager : MonoBehaviour
         }
     }
 
-    public void GoToChoixCarMenu()
+    public void GoToCarMenu()
     {
         PlayMenuMainContainer.SetActive(false);
         ChoixCarMenuContainer.SetActive(true);
         //EventSystem.current.SetSelectedGameObject();
     }
 
-    public void Go_To_Choix_Car_For_Course_Simple_Menu()
+    public void GoToTrackMenu()
     {
         CourseSimpleContainer.SetActive(true);
         //PlayMenuMainContainer.SetActive(false);
