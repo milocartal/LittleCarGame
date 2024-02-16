@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -26,6 +27,8 @@ public class SelectCarHandler : MonoBehaviour
 
     private GameObject TempCar;
 
+    private GameObject _voiture1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +44,13 @@ public class SelectCarHandler : MonoBehaviour
             
             Button tempBtn = TempCar.GetComponent<Button>();
             tempBtn.onClick.AddListener(() => { OnSelectCar(tempId); });
-        }
 
+            if (i == 0)
+            {
+                _voiture1 = TempCar;
+            }
+            EventSystem.current.SetSelectedGameObject(_voiture1);
+        }
     }
 
     public void OnSelectCar(int id)
