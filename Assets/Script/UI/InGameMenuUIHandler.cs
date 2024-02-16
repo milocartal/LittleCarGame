@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class InGameMenuUIHandler : MonoBehaviour
 {
-    //Other components
-    public GameObject canvas;
 
     public GameObject GPEndMenu;
     public GameObject ChronoEndMenu;
@@ -18,7 +16,6 @@ public class InGameMenuUIHandler : MonoBehaviour
 
     private void Awake()
     {
-        canvas.SetActive(false);
         GPEndMenu.SetActive(false);
         ChronoEndMenu.SetActive(false);
         MissionEndMenu.SetActive(false);
@@ -85,7 +82,7 @@ public class InGameMenuUIHandler : MonoBehaviour
         switch (GameManager.instance.GetRaceType())
         {
             case RaceType.gp:
-                canvas.SetActive(true);
+                GPEndMenu.SetActive(true);
                 break;
             case RaceType.simple:
                 SimpleEndMenu.SetActive(true);
