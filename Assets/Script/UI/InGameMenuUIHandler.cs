@@ -40,23 +40,30 @@ public class InGameMenuUIHandler : MonoBehaviour
 
     public void OnNextRace()
     {
-        switch(GameManager.instance.GetRaceType())
+        if (GameManager.instance.GetNumberOfRace() == GameManager.instance.GetMaxNumberOfRace() && GameManager.instance.GetRaceType() == RaceType.gp)
         {
-            case RaceType.gp:
-                teleportToCircuit.LoadingCircuitRandom();
-                break;
+            teleportToCircuit.GoToCircuit_X("MainMenu");
+        }
+        else
+        {
+            switch (GameManager.instance.GetRaceType())
+            {
+                case RaceType.gp:
+                    teleportToCircuit.LoadingCircuitRandom();
+                    break;
 
-            case RaceType.simple:
-                Debug.Log("simple");
-                break;
+                case RaceType.simple:
+                    Debug.Log("simple");
+                    break;
 
-            case RaceType.chrono:
-                break;
+                case RaceType.chrono:
+                    break;
 
 
-            default:
-                Debug.LogError("No correct race type");
-                break;
+                default:
+                    Debug.LogError("No correct race type");
+                    break;
+            }
         }
     }
 

@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     //Mode Grand Prix
     private List<string> Circuits = new List<string>(8);
     private int numberOfRace = 0;
+    private int maxNumberOfRace = 4;
 
     //States
     GameStates gameState = GameStates.countDown;
@@ -179,6 +180,10 @@ public class GameManager : MonoBehaviour
         {
             numberOfRace += 1;
         }
+        if(numberOfRace == maxNumberOfRace)
+        {
+            Debug.Log("Grand Prix Fini");
+        }
     }
 
 
@@ -224,5 +229,24 @@ public class GameManager : MonoBehaviour
     public List<string> GetCircuitList()
     {
         return Circuits;
+    }
+
+    public int GetNumberOfRace()
+    {
+        return numberOfRace;
+    }
+    public int GetMaxNumberOfRace()
+    {
+        return maxNumberOfRace;
+    }
+
+    public void AddRaceFinish(int number)
+    {
+        numberOfRace += number;
+    }
+
+    public void ResetNumberOfRace()
+    {
+        numberOfRace = 0;
     }
 }
