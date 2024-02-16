@@ -49,8 +49,12 @@ public class SelectCarHandler : MonoBehaviour
             {
                 _voiture1 = TempCar;
             }
-            EventSystem.current.SetSelectedGameObject(_voiture1);
         }
+    }
+
+    public GameObject getBouttonVoiture()
+    {
+        return _voiture1;
     }
 
     public void OnSelectCar(int id)
