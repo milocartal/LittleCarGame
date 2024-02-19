@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class InGameMenuUIHandler : MonoBehaviour
@@ -11,6 +12,11 @@ public class InGameMenuUIHandler : MonoBehaviour
     public GameObject ChronoEndMenu;
     public GameObject MissionEndMenu;
     public GameObject SimpleEndMenu;
+
+    [SerializeField] private GameObject _gp;
+    [SerializeField] private GameObject _simple;
+    [SerializeField] private GameObject _chrono;
+    [SerializeField] private GameObject _special;
 
     private TeleportToCircuit teleportToCircuit;
 
@@ -90,19 +96,24 @@ public class InGameMenuUIHandler : MonoBehaviour
         {
             case RaceType.gp:
                 GPEndMenu.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(_gp);
                 break;
             case RaceType.simple:
                 SimpleEndMenu.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(_simple);
                 break;
             case RaceType.chrono:
                 ChronoEndMenu.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(_chrono);
                 break;
             case RaceType.special:
                 MissionEndMenu.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(_special);
                 break;
             default:
                 Debug.Log("default");
                 SimpleEndMenu.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(_simple);
                 break;
         }
     }
