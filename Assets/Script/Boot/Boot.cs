@@ -5,34 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class Boot : MonoBehaviour
 {
-
-    int RecupVariab;
-
     // Start is called before the first frame update
     void Start()
     {
-        int RecupVariable = PlayerPrefs.GetInt("TutorialLaunched");
+        PlayerPrefs.SetInt("EnabledDriftMode", 1);
 
-        //Debug.Log(RecupVariable);
+        StartCoroutine(StartGame());
+    }
 
-        int ColorBlindfMode = PlayerPrefs.GetInt("ColorBlindMode");
-
-        //Debug.Log(ColorBlindfMode);
-
-
-        if (RecupVariable == 1)
+    private void Update()
+    {
+        if (Input.anyKeyDown)
         {
-            LaunchCorrectScene("MainMenu");
-        }
-        else
-        {
-            LaunchCorrectScene("Tuto");
+            LaunchCorrectScene();
         }
     }
 
-    // Update is called once per frame
-    void LaunchCorrectScene(string NameOfTheScene)
+    IEnumerator StartGame()
     {
-        SceneManager.LoadScene(NameOfTheScene);
+        yield return new WaitForSeconds(5);
+
+        LaunchCorrectScene();
+    }
+
+    void LaunchCorrectScene()
+    {
+        int RecupVariable = PlayerPrefs.GetInt("TutorialLaunched");
+
+        if (RecupVariable == 1)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else
+        {
+            SceneManager.LoadScene("Tuto");
+        }
     }
 }

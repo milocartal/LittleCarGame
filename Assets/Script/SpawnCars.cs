@@ -69,6 +69,10 @@ public class SpawnCars : MonoBehaviour
                             car.GetComponent<CarAIHandler>().enabled = false;
                             car.GetComponent<AStarLite>().enabled = false;
                             car.tag = "Player";
+                            if (PlayerPrefs.GetInt("EnabledDriftMode") == 0)
+                            {
+                                car.GetComponent<TopDownCarController>().driftFactor = 0;
+                            }
                         }
 
                         numberOfCarsSpawned++;

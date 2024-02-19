@@ -12,6 +12,8 @@ public class InGameMenuUIHandler : MonoBehaviour
     public GameObject ChronoEndMenu;
     public GameObject MissionEndMenu;
     public GameObject SimpleEndMenu;
+    public GameObject TrashCounter;
+    public GameObject LapCounter;
 
     [SerializeField] private GameObject _gp;
     [SerializeField] private GameObject _simple;
@@ -34,6 +36,11 @@ public class InGameMenuUIHandler : MonoBehaviour
     private void Start()
     {
         teleportToCircuit = FindObjectOfType<TeleportToCircuit>();
+        if (GameManager.instance.GetRaceType()==RaceType.special)
+        {
+            TrashCounter.SetActive(true);
+            LapCounter.SetActive(false);
+        }
     }
 
     private void FixedUpdate()

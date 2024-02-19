@@ -11,6 +11,7 @@ public class OptionsMenuController : MonoBehaviour
     [SerializeField] private GameObject _musique;
     [SerializeField] private GameObject _daltonien;
     [SerializeField] private GameObject _fullScreen;
+    [SerializeField] private GameObject _driftMode;
     [SerializeField] private GameObject _playerPref;
     [SerializeField] private GameObject _retour;
 
@@ -25,6 +26,19 @@ public class OptionsMenuController : MonoBehaviour
     public void ErasePlayerPref()
     {
         PlayerPrefs.DeleteAll();
+    }
+
+    public void SetDriftMode()
+    {
+        int driftModeTemp = PlayerPrefs.GetInt("EnabledDriftMode");
+        if(driftModeTemp > 0)
+        {
+            PlayerPrefs.SetInt("EnabledDriftMode", 0);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("EnabledDriftMode", 1);
+        }
     }
 
 }
