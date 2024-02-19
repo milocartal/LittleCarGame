@@ -8,12 +8,6 @@ public class SetLeaderboardItemInfo : MonoBehaviour
     public Text positionText;
     public Text driverNameText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void SetPositionText(string newPosition)
     {
         positionText.text = newPosition;

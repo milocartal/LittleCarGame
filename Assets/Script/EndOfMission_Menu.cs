@@ -22,6 +22,4 @@ public class EndOfMission_Menu : MonoBehaviour
         RecupValue = PlayerPrefs.GetInt("TrashCounter");
         CounterTrashFinal.text = RecupValue.ToString();
     }
-
-    
 }

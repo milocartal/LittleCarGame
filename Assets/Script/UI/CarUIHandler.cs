@@ -11,16 +11,9 @@ public class CarUIHandler : MonoBehaviour
     //Other components
     Animator animator = null;
 
-
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
     }
 
     public void SetupCar(CarData carData)

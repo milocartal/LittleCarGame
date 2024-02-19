@@ -26,10 +26,6 @@ public class SelectCarUIHandler : MonoBehaviour
     {
         //Load the car data
         carDatas = Resources.LoadAll<CarData>("CarData/");
-
-
-        
-
         StartCoroutine(SpawnCarCO(true));
     }
 

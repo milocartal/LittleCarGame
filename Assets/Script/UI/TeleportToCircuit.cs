@@ -11,8 +11,6 @@ public class TeleportToCircuit : MonoBehaviour
     {
         int NumberOfRace = SceneManager.sceneCountInBuildSettings;
         Circuits = GameManager.Instance.GetCircuitList();
-
-   
     }
 
     public void GoToCircuit_X(string DestinationCircuit)
@@ -20,8 +18,6 @@ public class TeleportToCircuit : MonoBehaviour
         SceneManager.LoadScene(DestinationCircuit);
     }
 
-
-    //POUR LE GP
     //Prend un circuit aléatoire dans la liste des Circuits et revoie dessus
     public void LoadingCircuitRandom()
     {

@@ -24,12 +24,6 @@ public class CarUIInputHandler : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void OnAcceleratePress()
     {
         inputVector.y = 1.0f;

@@ -16,12 +16,8 @@ public class Count_Trash : MonoBehaviour
         CountTrash.text = NumberOfTrashColleted.ToString();
     }
 
-
-
     public void Save_Trash_Count ()
     {
         PlayerPrefs.SetInt("TrashCounter", NumberOfTrashColleted);
     }
-
-
 }

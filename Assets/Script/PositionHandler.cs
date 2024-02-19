@@ -12,10 +12,6 @@ public class PositionHandler : MonoBehaviour
     LeaderboardUIHandler leaderboardUIHandler;
 
     public List<CarLapCounter> carLapCounters = new List<CarLapCounter>();
-    private void Awake()
-    {
-      
-    }
 
     // Start is called before the first frame update
     void Start()
