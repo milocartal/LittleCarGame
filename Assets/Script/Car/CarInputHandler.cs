@@ -18,12 +18,6 @@ public class CarInputHandler : MonoBehaviour
         topDownCarController = GetComponent<TopDownCarController>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame and is frame dependent
     void Update()
     {

@@ -9,10 +9,4 @@ public class Surface : MonoBehaviour
     [Header("Surface")]
     public SurfaceTypes surfaceType;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
 }
