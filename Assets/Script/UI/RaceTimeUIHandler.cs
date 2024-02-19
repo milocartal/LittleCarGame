@@ -7,6 +7,7 @@ using TMPro;
 public class RaceTimeUIHandler : MonoBehaviour
 {
     public TMP_Text timeText;
+    public TMP_Text timeText2;
 
     float lastRaceTimeUpdate = 0;
 
@@ -29,6 +30,7 @@ public class RaceTimeUIHandler : MonoBehaviour
                 int raceTimeSeconds = (int)Mathf.Floor(raceTime % 60);
 
                 timeText.text = $"{raceTimeMinutes.ToString("00")}:{raceTimeSeconds.ToString("00")}";
+                timeText2.text = $"{raceTimeMinutes.ToString("00")}:{raceTimeSeconds.ToString("00")}";
 
                 lastRaceTimeUpdate = raceTime;
             }

@@ -19,6 +19,7 @@ public class PlayMenuManager : MonoBehaviour
     [SerializeField] private GameObject _retour;
     [SerializeField] private GameObject _retourChoixCar;
     [SerializeField] private GameObject _circuit1;
+    public SelectCarHandler _selectCarHandler;
 
 
 
@@ -40,14 +41,14 @@ public class PlayMenuManager : MonoBehaviour
         }
     }
 
-    public void GoToChoixCarMenu()
+    public void GoToCarMenu()
     {
         PlayMenuMainContainer.SetActive(false);
         ChoixCarMenuContainer.SetActive(true);
-        //EventSystem.current.SetSelectedGameObject();
+        EventSystem.current.SetSelectedGameObject(_selectCarHandler.getBouttonVoiture());
     }
 
-    public void Go_To_Choix_Car_For_Course_Simple_Menu()
+    public void GoToTrackMenu()
     {
         CourseSimpleContainer.SetActive(true);
         //PlayMenuMainContainer.SetActive(false);
@@ -74,7 +75,7 @@ public class PlayMenuManager : MonoBehaviour
             ChoixCarMenuContainer.SetActive(true);
             CourseSimpleContainer.SetActive(false);
             //PlayMenuMainContainer.SetActive(false);
-            //EventSystem.current.SetSelectedGameObject();
+            EventSystem.current.SetSelectedGameObject(_selectCarHandler.getBouttonVoiture());
         }
     }
 }
