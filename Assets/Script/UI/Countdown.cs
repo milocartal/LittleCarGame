@@ -10,8 +10,6 @@ public class Countdown : MonoBehaviour
     public float remainingTime;
     public Count_Trash CTObject;
 
-    public EndOfMission_Menu EndOfM_MenuObject;
-
     // Update is called once per frame
     void Update()
     {
@@ -26,11 +24,6 @@ public class Countdown : MonoBehaviour
             //Qaund le timer arrrive à zéro on récupère le score final
             CTObject.GetComponent<Count_Trash>().Save_Trash_Count();
             //Quand on aura save le score on peut l'envoyer
-
-            //Quand le timer arrive à zéro on affiche un canvas
-            EndOfM_MenuObject.GetComponent<EndOfMission_Menu>().EndOfMission();
-            
-            
 
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);

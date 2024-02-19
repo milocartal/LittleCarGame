@@ -661,14 +661,15 @@ GameObject:
   - component: {fileID: 4751765595567230927}
   - component: {fileID: 4751765595567230928}
   - component: {fileID: 4751765595567230929}
+  - component: {fileID: 8074771797229316114}
+  - component: {fileID: 4751765595567230924}
   - component: {fileID: 4751765595567230931}
   - component: {fileID: 4751765595567230932}
-  - component: {fileID: 4751765595567230924}
-  - component: {fileID: 4751765595567230925}
-  - component: {fileID: 8074771797229316114}
+  - component: {fileID: 8582156321545118322}
+  - component: {fileID: 4290208889300704163}
   m_Layer: 0
   m_Name: TrashTruck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -690,6 +691,7 @@ Transform:
   - {fileID: 414649507919630634}
   - {fileID: 4751765596554480251}
   - {fileID: 4751765596295291089}
+  - {fileID: 6329886068230629404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -726,6 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5752b921e943488eafc846551fa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carType: 0
   driftFactor: 0
   accelerationFactor: 20
   turnFactor: 3
@@ -772,6 +775,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 1
   isUIInput: 0
+--- !u!114 &8074771797229316114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751765595567230933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f072d378a5be242901460f9a96c810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: e0065016664769749b423959ddf97886, type: 2}
+  tiresScreeachingAudioSource: {fileID: 6479181623986768479}
+  engineAudioSource: {fileID: 8711592229095276256}
+  carHitAudioSource: {fileID: 6661110574964818004}
+  carJumpAudioSource: {fileID: 2499173439771684103}
+  carJumpLandingAudioSource: {fileID: 6496302980802979856}
+--- !u!114 &4751765595567230924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751765595567230933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb46ce0bef5873418e664376308d7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carOutlineSpriteRenderer: {fileID: 4751765595968984239}
 --- !u!114 &4751765595567230931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +813,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4751765595567230933}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de5c6a6003fbcb34ca1d5e1602eb5370, type: 3}
   m_Name: 
@@ -802,8 +836,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surfaceLayer:
     serializedVersion: 2
-    m_Bits: 4160
---- !u!114 &4751765595567230924
+    m_Bits: 0
+--- !u!114 &8582156321545118322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -812,25 +846,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4751765595567230933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb46ce0bef5873418e664376308d7c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d5bdf0c23c100740897e45f9faa5155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carOutlineSpriteRenderer: {fileID: 4751765595968984239}
---- !u!114 &4751765595567230925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4751765595567230933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd1eaad36ff33b41a174501c0b8b1bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carSpriteObject: {fileID: 4751765596672501762}
-  ghostCarPlaybackPrefab: {fileID: 8365524435586326021, guid: 7a10f2e7c8df9364eb3d4c37c30f2864, type: 3}
---- !u!114 &8074771797229316114
+  isDebugActiveForCar: 0
+--- !u!114 &4290208889300704163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,15 +859,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4751765595567230933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7f072d378a5be242901460f9a96c810, type: 3}
+  m_Script: {fileID: 11500000, guid: e7b9dc69d14d16649a8f33c7dc5b6afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: e0065016664769749b423959ddf97886, type: 2}
-  tiresScreeachingAudioSource: {fileID: 6479181623986768479}
-  engineAudioSource: {fileID: 8711592229095276256}
-  carHitAudioSource: {fileID: 6661110574964818004}
-  carJumpAudioSource: {fileID: 2499173439771684103}
-  carJumpLandingAudioSource: {fileID: 6496302980802979856}
+  carPositionText: {fileID: 6679221916372008059}
 --- !u!1 &4751765595610405202
 GameObject:
   m_ObjectHideFlags: 0
@@ -16489,3 +16504,116 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &98321949413086297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4751765595567230926}
+    m_Modifications:
+    - target: {fileID: 3530633323926097283, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_Name
+      value: CarPositionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+--- !u!224 &6329886068230629404 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6234400929696758853, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+  m_PrefabInstance: {fileID: 98321949413086297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6679221916372008059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6767806034468628514, guid: 4147e65e9859afb4abcc78b1a35ea767, type: 3}
+  m_PrefabInstance: {fileID: 98321949413086297}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
