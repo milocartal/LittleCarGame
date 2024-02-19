@@ -21,6 +21,7 @@ public class SpawnCars : MonoBehaviour
 
         //Load the car data
         CarData[] carDatas = Resources.LoadAll<CarData>("CarData/");
+        CarData[] carDatasSpecial = Resources.LoadAll<CarData>("SpecialCarData/");
 
         //Driver info
         List<DriverInfo> driverInfoList = new List<DriverInfo>(GameManager.instance.GetDriverList());
@@ -40,40 +41,77 @@ public class SpawnCars : MonoBehaviour
             int selectedCarID = driverInfo.carUniqueID;
             Debug.Log(spawnPoints.Length);
 
-            //Find the selected car
-            foreach (CarData cardata in carDatas)
+            if (GameManager.instance.GetRaceType() != RaceType.special)
             {
-                //We found the car data for the player
-                if (cardata.CarUniqueID == selectedCarID)
+                //Find the selected car
+                foreach (CarData cardata in carDatas)
                 {
-                    //Now spawn it on the spawnpoint
-                    GameObject car = Instantiate(cardata.CarPrefab, spawnPoint.position, spawnPoint.rotation);
-
-                    car.name = driverInfo.name;
-
-                    car.transform.rotation = Quaternion.Euler(0, 0, RotationCar);
-                    car.GetComponent<CarInputHandler>().playerNumber = driverInfo.playerNumber;
-
-                    if (driverInfo.isAI)
+                    //We found the car data for the player
+                    if (cardata.CarUniqueID == selectedCarID)
                     {
-                        car.GetComponent<CarInputHandler>().enabled = false;
-                        car.GetComponent<TopDownCarController>().driftFactor = 0;
-                        car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
-                        car.tag = "AI";
-                    }
-                    else
-                    {
-                        car.GetComponent<CarAIHandler>().enabled = false;
-                        car.GetComponent<AStarLite>().enabled = false;
-                        car.tag = "Player";
-                    }
+                        //Now spawn it on the spawnpoint
+                        GameObject car = Instantiate(cardata.CarPrefab, spawnPoint.position, spawnPoint.rotation);
 
-                    numberOfCarsSpawned++;
+                        car.name = driverInfo.name;
 
-                    break;
+                        car.transform.rotation = Quaternion.Euler(0, 0, RotationCar);
+                        car.GetComponent<CarInputHandler>().playerNumber = driverInfo.playerNumber;
+
+                        if (driverInfo.isAI)
+                        {
+                            car.GetComponent<CarInputHandler>().enabled = false;
+                            car.GetComponent<TopDownCarController>().driftFactor = 0;
+                            car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
+                            car.tag = "AI";
+                        }
+                        else
+                        {
+                            car.GetComponent<CarAIHandler>().enabled = false;
+                            car.GetComponent<AStarLite>().enabled = false;
+                            car.tag = "Player";
+                        }
+
+                        numberOfCarsSpawned++;
+
+                        break;
+                    }
                 }
             }
+            else
+            {
+                foreach (CarData cardata in carDatasSpecial)
+                {
+                    //We found the car data for the player
+                    if (cardata.CarUniqueID == selectedCarID)
+                    {
+                        //Now spawn it on the spawnpoint
+                        GameObject car = Instantiate(cardata.CarPrefab, spawnPoint.position, spawnPoint.rotation);
 
+                        car.name = driverInfo.name;
+
+                        car.transform.rotation = Quaternion.Euler(0, 0, RotationCar);
+                        car.GetComponent<CarInputHandler>().playerNumber = driverInfo.playerNumber;
+
+                        if (driverInfo.isAI)
+                        {
+                            car.GetComponent<CarInputHandler>().enabled = false;
+                            car.GetComponent<TopDownCarController>().driftFactor = 0;
+                            car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
+                            car.tag = "AI";
+                        }
+                        else
+                        {
+                            car.GetComponent<CarAIHandler>().enabled = false;
+                            car.GetComponent<AStarLite>().enabled = false;
+                            car.tag = "Player";
+                        }
+
+                        numberOfCarsSpawned++;
+
+                        break;
+                    }
+                }
+            }
             //Remove the spawned driver
             driverInfoList.Remove(driverInfo);
         }

@@ -26,7 +26,7 @@ public class PlayMenuManager : MonoBehaviour
     {
         if (InputManager.Instance.MenuOpenCloseInput)
         {
-            if (ChoixCarMenuContainer.activeSelf == true || CourseSimpleContainer.activeSelf == true)
+            if (ChoixCarMenuContainer.activeSelf == true || CourseSimpleContainer.activeSelf == true || MissionMenuContainer.activeSelf == true)
             {
                 Return_to_PlayMenu();
             }
@@ -53,6 +53,7 @@ public class PlayMenuManager : MonoBehaviour
     {
         PlayMenuMainContainer.SetActive(false);
         MissionMenuContainer.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(_selectCarHandler.getBouttonVoitureSpeciale());
     }
 
     public void Return_to_PlayMenu ()
@@ -79,7 +80,7 @@ public class PlayMenuManager : MonoBehaviour
         {
             PlayMenuMainContainer.SetActive(true);
             MissionMenuContainer.SetActive(false);
-            
+            EventSystem.current.SetSelectedGameObject(_grandPrix);
         }
     }
 }

@@ -14,6 +14,7 @@ public class SelectCarHandler : MonoBehaviour
 
     [Header("Spawn on")]
     public Transform spawnOnTransform;
+    public Transform spawnOnTransformSpecial;
 
     public PlayMenuManager PlayMenuM;
     public TeleportToCircuit TeleportToCObject;
@@ -22,17 +23,21 @@ public class SelectCarHandler : MonoBehaviour
     CarUIHandler carUIHandler = null;
 
     CarData[] carDatas;
+    CarData[] specialCarDatas;
 
     int selectedCarIndex = 1;
 
     private GameObject TempCar;
 
     private GameObject _voiture1;
+    private GameObject _specialCar;
 
     // Start is called before the first frame update
     void Start()
     {
         carDatas = Resources.LoadAll<CarData>("CarData/");
+        specialCarDatas = Resources.LoadAll<CarData>("SpecialCarData/");
+
 
         //On va crée des boutons
         for (int i = 0; i < carDatas.Length; i++)
@@ -50,6 +55,22 @@ public class SelectCarHandler : MonoBehaviour
                 _voiture1 = TempCar;
             }
         }
+
+        for (int i = 0; i < specialCarDatas.Length; i++)
+        {
+            int tempId = specialCarDatas[i].carUniqueID - 50;
+            TempCar = Instantiate(carPrefab, spawnOnTransformSpecial.position, spawnOnTransformSpecial.rotation, spawnOnTransformSpecial);
+            carUIHandler = TempCar.GetComponent<CarUIHandler>();
+            carUIHandler.SetupCar(specialCarDatas[i]);
+
+            Button tempBtn = TempCar.GetComponent<Button>();
+            tempBtn.onClick.AddListener(() => { OnSelectCar(tempId); });
+
+            if (i == 0)
+            {
+                _specialCar = TempCar;
+            }
+        }
     }
 
     public GameObject getBouttonVoiture()
@@ -57,11 +78,23 @@ public class SelectCarHandler : MonoBehaviour
         return _voiture1;
     }
 
+    public GameObject getBouttonVoitureSpeciale()
+    {
+        return _specialCar;
+    }
+
     public void OnSelectCar(int id)
     {
         GameManager.instance.ClearDriversList();
+        Debug.Log(id);
 
-        GameManager.instance.AddDriverToList(1, "P1", carDatas[id].CarUniqueID, false);
+        if (GameManager.instance.GetRaceType() != RaceType.special)
+        {
+            GameManager.instance.AddDriverToList(1, "P1", carDatas[id].CarUniqueID, false);
+        } else
+        {
+            GameManager.instance.AddDriverToList(1, "P1", specialCarDatas[id].CarUniqueID, false);
+        }
 
         //Create a new list of cars
         List<CarData> uniqueCars = new List<CarData>(carDatas);
@@ -73,7 +106,7 @@ public class SelectCarHandler : MonoBehaviour
         List<string> uniqueNames = names.ToList<string>();
 
         //Add AI drivers
-        if (GameManager.instance.GetRaceType() != RaceType.chrono)
+        if (GameManager.instance.GetRaceType() != RaceType.chrono && GameManager.instance.GetRaceType() != RaceType.special)
         {
             for (int i = 2; i < 5; i++)
             {
@@ -90,13 +123,14 @@ public class SelectCarHandler : MonoBehaviour
         switch(GameManager.instance.GetRaceType())
         {
             case (RaceType.simple):
-                PlayMenuM.GetComponent<PlayMenuManager>().GoToTrackMenu();
-                break;
             case (RaceType.chrono):
                 PlayMenuM.GetComponent<PlayMenuManager>().GoToTrackMenu();
                 break;
             case (RaceType.gp):
                 TeleportToCObject.GetComponent<TeleportToCircuit>().LoadingCircuitRandom();
+                break;
+            case (RaceType.special):
+                TeleportToCObject.GetComponent<TeleportToCircuit>().GoToCircuit_X("Mode_SP_01");
                 break;
         }
 
