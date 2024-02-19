@@ -7,6 +7,7 @@ using TMPro;
 public class Count_Trash : MonoBehaviour
 {
     public TMP_Text CountTrash;
+    public TMP_Text EndScore;
 
     int NumberOfTrashColleted = 0;
 
@@ -14,6 +15,7 @@ public class Count_Trash : MonoBehaviour
     {
         NumberOfTrashColleted += i;
         CountTrash.text = NumberOfTrashColleted.ToString();
+        EndScore.text = $"Poubelles ramassées : {NumberOfTrashColleted.ToString("00")}";
     }
 
     public void Save_Trash_Count ()

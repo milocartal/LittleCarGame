@@ -10,6 +10,8 @@ public class SpawnCars : MonoBehaviour
 
     int numberOfCarsSpawned = 0;
 
+    private float playerSpeed = 15;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +64,10 @@ public class SpawnCars : MonoBehaviour
                             car.GetComponent<CarInputHandler>().enabled = false;
                             car.GetComponent<TopDownCarController>().driftFactor = 0;
                             car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
+                            if(car.GetComponent<TopDownCarController>().maxSpeed > playerSpeed)
+                            {
+                                car.GetComponent<TopDownCarController>().maxSpeed = playerSpeed;
+                            }
                             car.tag = "AI";
                         }
                         else
@@ -73,6 +79,7 @@ public class SpawnCars : MonoBehaviour
                             {
                                 car.GetComponent<TopDownCarController>().driftFactor = 0;
                             }
+                            playerSpeed = car.GetComponent<TopDownCarController>().maxSpeed;
                         }
 
                         numberOfCarsSpawned++;
@@ -101,6 +108,10 @@ public class SpawnCars : MonoBehaviour
                             car.GetComponent<CarInputHandler>().enabled = false;
                             car.GetComponent<TopDownCarController>().driftFactor = 0;
                             car.GetComponent<TopDownCarController>().turnFactor = 3.5f;
+                            if (car.GetComponent<TopDownCarController>().maxSpeed > playerSpeed)
+                            {
+                                car.GetComponent<TopDownCarController>().maxSpeed = playerSpeed;
+                            }
                             car.tag = "AI";
                         }
                         else
@@ -108,6 +119,11 @@ public class SpawnCars : MonoBehaviour
                             car.GetComponent<CarAIHandler>().enabled = false;
                             car.GetComponent<AStarLite>().enabled = false;
                             car.tag = "Player";
+                            if (PlayerPrefs.GetInt("EnabledDriftMode") == 0)
+                            {
+                                car.GetComponent<TopDownCarController>().driftFactor = 0;
+                            }
+                            playerSpeed = car.GetComponent<TopDownCarController>().maxSpeed;
                         }
 
                         numberOfCarsSpawned++;
