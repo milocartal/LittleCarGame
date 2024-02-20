@@ -70,6 +70,7 @@ public class PauseMenu : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1.0f;
+        GameManager.instance.SetRaceType(RaceType.menu);
         SceneManager.LoadScene("MainMenu");
     }
 

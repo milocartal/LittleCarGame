@@ -34,10 +34,12 @@ public class Boot : MonoBehaviour
 
         if (RecupVariable == 1)
         {
+            GameManager.instance.SetRaceType(RaceType.menu);
             SceneManager.LoadScene("MainMenu");
         }
         else
         {
+            GameManager.instance.SetRaceType(RaceType.tuto);
             SceneManager.LoadScene("Tuto");
         }
     }
