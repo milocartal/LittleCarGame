@@ -8,7 +8,8 @@ public class Boot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("EnabledDriftMode", 1);
+        if(!(PlayerPrefs.GetInt("TutorialLaunched") > 0 && PlayerPrefs.GetInt("EnabledDriftMode") == 0))
+            PlayerPrefs.SetInt("EnabledDriftMode", 1);
 
         StartCoroutine(StartGame());
     }

@@ -28,16 +28,16 @@ public class OptionsMenuController : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
-    public void SetDriftMode()
+    public void SetDriftMode(bool isEnabled)
     {
-        int driftModeTemp = PlayerPrefs.GetInt("EnabledDriftMode");
-        if(driftModeTemp > 0)
+        
+        if(isEnabled)
         {
-            PlayerPrefs.SetInt("EnabledDriftMode", 0);
+            PlayerPrefs.SetInt("EnabledDriftMode", 1);
         }
         else
         {
-            PlayerPrefs.SetInt("EnabledDriftMode", 1);
+            PlayerPrefs.SetInt("EnabledDriftMode", 0);
         }
     }
 
